@@ -1,0 +1,55 @@
+.section-form {
+
+  &__checbox {
+    margin: 0 auto;
+  }
+}
+.attractions {
+  border: none;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    padding: 24px 23px 20px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 10px 0 10px 62px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__item--checked {
+  }
+
+  &__item-bridge {
+  }
+
+  &__item-input {
+  }
+
+  &__item-mountain {
+  }
+
+  &__item-park {
+  }
+
+  &__item-rock {
+  }
+}

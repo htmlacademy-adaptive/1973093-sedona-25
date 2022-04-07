@@ -1,0 +1,18 @@
+
+.contacts {
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+
+  &__info {
+    margin: 64px auto 20px;
+
+  }
+
+  &__contacts-info {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.hashtag {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  word-break: break-all;
+
+  &__link {
+    margin: 28px 78px 33px;
+    text-decoration: none;
+    width: 166px;
+  }
+}

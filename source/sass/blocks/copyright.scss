@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+
+  &__text {
+    width: 121px;
+    margin: 7px 0 29px 80px;
+    word-break: break-all;
+  }
+
+  &__link {
+    width: 27px;
+    height: 35px;
+    margin: 0 96px 23px 0;
+  }
+}
+.visually-hidden {
+}

@@ -1,0 +1,28 @@
+.section-form {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+
+
+  &__emotions {
+    margin: 0 auto;
+  }
+
+  &__emotions-text {
+    margin: 24px 17px 20px;
+    text-transform: uppercase;
+  }
+
+  &__description-input {
+    width: 279px;
+    height: 150px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 56px;
+  }
+}

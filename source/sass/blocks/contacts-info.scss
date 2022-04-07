@@ -1,0 +1,49 @@
+.contacts-info {
+
+  &__phone-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    width: 161px;
+    margin: 0 103px 0 16px;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: 222px;
+    height: 58px;
+    padding-left: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &__connection {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    background-color: rgba(230, 230, 230, 1);
+  }
+
+  &__connection-item {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__mail-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+  }
+}

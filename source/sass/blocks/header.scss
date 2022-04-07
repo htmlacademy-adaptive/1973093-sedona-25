@@ -1,0 +1,18 @@
+.main-header {
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    display: block;
+    width: 185px;
+    height: 96px;
+    top: 0;
+    margin-left: 67px;
+    margin-bottom: -40px;
+  }
+
+  &__logo-image {
+  }
+}

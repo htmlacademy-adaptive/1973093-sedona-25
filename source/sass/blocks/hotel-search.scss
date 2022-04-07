@@ -1,0 +1,27 @@
+.hotel-search {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__interest {
+    font-size: 21px;
+    margin: 0;
+    padding: 39px 30px 35px;
+  }
+
+  &__paragraph-data {
+    font-weight: 400;
+    margin: 0;
+    padding: 0 30px 32px;
+  }
+
+  &__map {
+    display: block;
+    width: 320px;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+}

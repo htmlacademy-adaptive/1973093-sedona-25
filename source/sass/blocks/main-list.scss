@@ -1,0 +1,81 @@
+.main-list {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+
+
+  &__block {
+    background: rgba(238, 238, 238, 1);
+    list-style-type: none;
+  }
+
+  &__block--primary {
+    background: rgba(129, 179, 210, 1);
+  }
+
+  &__presentation {
+    padding: 26px 26px 11px;
+    margin: 0;
+  }
+
+  &__presentation--primary {
+    padding: 33px 22px 11px;
+    margin: 0;
+  }
+
+  &__number {
+    padding: 0 22px 17px;
+    margin: 0;
+  }
+
+  &__description {
+    padding: 0 26px 26px;
+    margin: 0;
+  }
+
+  &__description--primary {
+    padding: 0 22px 40px;
+    margin: 0;
+  }
+
+  &__foto {
+    width: 320px;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 25px;
+    left: 18px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 31px 197px 16px 65px;
+    padding-left: 65px;
+  }
+
+  &__pros {
+    margin: 0;
+    padding: 0 30px 22px 65px;
+    text-align: start;
+  }
+}
