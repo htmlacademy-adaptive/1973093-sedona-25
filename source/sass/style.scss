@@ -1,10 +1,8 @@
-@use "./blocks/body-wrapper.scss";
 @use "./blocks/header.scss";
 @use "./blocks/body.scss";
 @use "./blocks/nav.scss";
 @use "./blocks/visually-hidden.scss";
 @use "./blocks/main-nav.scss";
-@use "./blocks/catalog-nav.scss";
 @use "./blocks/form-nav.scss";
 @use "./blocks/intro.scss";
 @use "./blocks/heading-block.scss";
@@ -16,7 +14,6 @@
 @use "./blocks/hashtag.scss";
 @use "./blocks/social.scss";
 @use "./blocks/copyright.scss";
-@use "./blocks/intro-form.scss";
 @use "./blocks/section-form.scss";
 @use "./blocks/personaly.scss";
 @use "./blocks/personaly-list.scss";
@@ -29,5 +26,8 @@
 @use "./blocks/wrapper-button.scss";
 @use "./blocks/presentation.scss";
 @use "./blocks/foto-list.scss";
-@use "./blocks/list__wrapper.scss";
-@use "./blocks/video-presentation.scss";
+@use "./blocks/list-wrapper.scss";
+@use "./blocks/list.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/form-container.scss";
+@use "./blocks/catalog-container.scss";

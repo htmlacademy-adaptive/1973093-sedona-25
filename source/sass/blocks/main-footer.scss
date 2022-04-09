@@ -7,11 +7,16 @@
   text-transform: uppercase;
 
   &__hashtag {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 33px;
   }
 
   &__social {
+    margin: 0 auto 40px;
   }
 
   &__copyright {
+    margin: 0 auto;
   }
 }

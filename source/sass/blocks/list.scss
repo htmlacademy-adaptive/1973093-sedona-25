@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    min-width: 105px;
+  }
+
+  &__item--current {
+  }
+}

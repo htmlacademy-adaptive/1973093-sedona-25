@@ -7,13 +7,16 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    margin: 32px 18px 35px;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 35px;
   }
 
   &__advantages {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    margin: 0 18px 16px;
+    margin: 0 auto;
+    padding-bottom: 16px;
   }
 }

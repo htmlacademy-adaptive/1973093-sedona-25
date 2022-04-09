@@ -10,9 +10,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    width: 69px;
+    min-width: 75px;
     margin: 0 247px 0 16px;
     text-transform: uppercase;
+    text-align: start;
   }
 
   &__input {
@@ -36,5 +37,6 @@
   &__patronymic-item {
     display: flex;
     flex-direction: column;
+    padding-bottom: 39px;
   }
 }

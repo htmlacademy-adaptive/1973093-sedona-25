@@ -1,0 +1,14 @@
+.main-container {
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__intro {
+    margin: 0;
+    margin-left: -20px;
+    width: 320px;
+    height: 389px;
+    background-color: rgba(0, 0, 0, 1);
+  }
+}

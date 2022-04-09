@@ -8,10 +8,11 @@
   display: flex;
 
   &__link-down {
-    margin: 0 18px 49px;
+    margin: 0 auto 49px;
     padding: 16px 49px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(129, 179, 210, 1);
     text-decoration: none;
+    word-break: break-all;
   }
 }

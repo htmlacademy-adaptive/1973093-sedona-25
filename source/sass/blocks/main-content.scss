@@ -1,6 +1,10 @@
 .main-content {
-  .main-content__list {
+  &__list {
     margin: 0;
     padding: 0;
+  }
+
+  &__heading-block {
+    margin: 38px auto 28px;
   }
 }

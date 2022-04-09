@@ -14,7 +14,7 @@
 
   &__title {
     margin: 0;
-    padding: 24px 23px 20px;
+    padding: 24px 20px;
     text-transform: uppercase;
   }
 
@@ -26,9 +26,12 @@
   }
 
   &__item {
-    padding: 10px 0 10px 62px;
+    margin: 0;
+    margin-right: auto;
+    padding: 10px 0 10px;
+    width: 218px;
+    text-align: end;
     display: flex;
-    align-items: center;
   }
 
   &__item:not(:last-child) {
