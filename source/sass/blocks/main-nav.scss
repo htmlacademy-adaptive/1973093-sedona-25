@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
 
-&__wrapper-left {
+  &__wrapper-left {
     display: flex;
     justify-content: space-around;
   }
@@ -19,8 +19,4 @@
     display: flex;
     justify-content: space-around;
   }
-}
-
-.hidden {
-  display: none;
 }

@@ -1,12 +1,6 @@
-.section-form {
-
-  &__radio {
-    margin: 0 auto;
-  }
-}
 .impressions {
   border: none;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -38,18 +32,18 @@
     margin-bottom: 16px;
   }
 
-  &__item--checked {
-  }
+  // &__item--checked {
+  // }
 
-  &__item-positively {
-  }
+  // &__item-positively {
+  // }
 
-  &__item-input {
-  }
+  // &__item-input {
+  // }
 
-  &__item-negative {
-  }
+  // &__item-negative {
+  // }
 
-  &__item-neutral {
-  }
+  // &__item-neutral {
+  // }
 }
