@@ -1,0 +1,15 @@
+.copyright {
+  display: flex;
+
+  &__text {
+    width: 121px;
+    margin: 7px 0 29px auto;
+    word-break: break-all;
+  }
+
+  &__link {
+    width: 27px;
+    height: 35px;
+    margin: 0 auto 23px 0;
+  }
+}

@@ -1,0 +1,39 @@
+.social {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(129, 179, 210, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &__link {
+    position: absolute;
+  }
+
+  &__link--vkontakte {
+    top: 17px;
+    right: 14px;
+  }
+
+  &__link--telegram {
+    top: 17px;
+    right: 14px;
+  }
+
+  &__link--youtube {
+    top: 17px;
+    right: 14px;
+  }
+}

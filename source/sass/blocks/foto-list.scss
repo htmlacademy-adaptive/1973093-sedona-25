@@ -1,0 +1,35 @@
+.foto-list {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  list-style-type: none;
+
+  &__item {
+    margin: 0 auto;
+  }
+
+  &__image {
+    display: block;
+    width: 280px;
+    height: 280px;
+    padding-top: 24px;
+    padding-bottom: 15px;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__autor {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    margin-bottom: 11px;
+    text-transform: none;
+  }
+}

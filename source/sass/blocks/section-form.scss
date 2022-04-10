@@ -1,0 +1,36 @@
+.section-form {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+
+  // &__opinion {
+  // }
+
+  &__personaly {
+    margin: 0 auto;
+  }
+
+  &__contacts {
+    margin: 0 auto;
+  }
+
+  &__radio {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__checbox {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__emotions {
+    margin: 0 auto;
+  }
+
+  &__wrapper-button {
+    margin: 0 auto;
+  }
+}

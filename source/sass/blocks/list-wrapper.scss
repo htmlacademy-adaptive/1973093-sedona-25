@@ -1,0 +1,17 @@
+.list-wrapper {
+  display: flex;
+
+  &__like {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 23px;
+    height: 21px;
+    margin-right: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__liked {
+    display: flex;
+  }
+}

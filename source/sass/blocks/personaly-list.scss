@@ -1,0 +1,41 @@
+.personaly-list {
+  &__name-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    min-width: 75px;
+    margin: 0 247px 0 16px;
+    text-transform: uppercase;
+    text-align: start;
+  }
+
+  &__input {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    height: 58px;
+    padding: 0;
+    padding-left: 16px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+  }
+
+  &__surname-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  &__patronymic-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 39px;
+  }
+}

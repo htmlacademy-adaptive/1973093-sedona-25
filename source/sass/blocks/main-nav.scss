@@ -1,0 +1,22 @@
+.main-nav {
+  position: relative;
+  display: flex;
+
+  &__wrapper-left {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    width: 306px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__wrapper-rirht {
+    display: flex;
+    justify-content: space-around;
+  }
+}

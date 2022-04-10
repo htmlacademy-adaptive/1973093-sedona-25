@@ -1,0 +1,28 @@
+.catalog-container {
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__intro {
+    margin: 0;
+    margin-top: -56px;
+    margin-left: -20px;
+    width: 320px;
+    height: 214px;
+    background-color: rgba(0, 0, 0, 1);
+
+    &__presentation {
+      margin: 0 auto;
+    }
+  }
+
+  &__heading-block {
+    margin: 0 auto;
+  }
+
+  &__video {
+    margin: 0 auto;
+    width: 266px;
+    height: 116px;
+  }
+}
