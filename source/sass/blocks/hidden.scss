@@ -1,0 +1,13 @@
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+.hidden {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
