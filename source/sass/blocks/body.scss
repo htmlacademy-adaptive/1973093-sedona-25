@@ -5,6 +5,8 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
+    margin: 0;
+    padding: 0;
     width: 320px;
     background-color: rgba(255, 255, 255, 1);
 
@@ -27,7 +29,22 @@
 
   &__body-wrapper {
     width: 284px;
+    padding: 0 18px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 768px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
   }
 
   &__secondary-header {

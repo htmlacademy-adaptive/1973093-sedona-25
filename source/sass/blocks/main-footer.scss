@@ -1,5 +1,5 @@
 .main-footer {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -10,13 +10,49 @@
     margin: 0 auto;
     padding-top: 28px;
     padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin: 45px auto 71px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin: 45px auto 71px;
+      padding: 0;
+    }
   }
 
   &__social {
     margin: 0 auto 40px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin: 36px auto;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin: 36px auto;
+      padding: 0;
+    }
   }
 
   &__copyright {
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin: 36px auto 43px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin: 36px auto 43px;
+      padding: 0;
+    }
   }
 }

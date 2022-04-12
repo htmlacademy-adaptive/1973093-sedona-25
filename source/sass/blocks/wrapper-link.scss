@@ -1,5 +1,5 @@
 .wrapper-link {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -14,5 +14,15 @@
     background-color: rgba(129, 179, 210, 1);
     text-decoration: none;
     word-break: break-all;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto 58px;
+      padding: 15px 121px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto 66px;
+      padding: 15px 121px;
+    }
   }
 }
