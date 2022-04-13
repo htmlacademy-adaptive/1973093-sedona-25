@@ -1,11 +1,11 @@
 .main-container {
-  &__wrapper {
-    margin: 0 auto;
-  }
 
   &__intro {
+    background-image: url("../../img/gallery/group13.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
     margin: 0;
-    margin-left: -20px;
     width: 320px;
     height: 389px;
     background-color: rgba(0, 0, 0, 1);

@@ -6,23 +6,21 @@
   text-align: center;
   text-transform: uppercase;
   display: flex;
+  margin: 0 auto 49px;
+  padding: 16px 49px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(129, 179, 210, 1);
+  text-decoration: none;
+  word-break: break-all;
+  justify-content: center;
 
-  &__link-down {
-    margin: 0 auto 49px;
-    padding: 16px 49px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(129, 179, 210, 1);
-    text-decoration: none;
-    word-break: break-all;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 0 auto 58px;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin: 0 auto 58px;
-      padding: 15px 121px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 auto 66px;
-      padding: 15px 121px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 458px;
+    margin: 0 auto 66px;
   }
 }
