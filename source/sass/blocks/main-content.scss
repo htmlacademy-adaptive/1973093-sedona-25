@@ -6,13 +6,13 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
-      width: 768px;
+      // width: 768px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
       flex-wrap: wrap;
-      width: 1200px;
+      // width: 1200px;
     }
   }
 
@@ -29,6 +29,22 @@
     @media (min-width: $desktop-width) {
       width: 483px;
       margin: 59px auto;
+      padding: 0;
+    }
+  }
+
+  &__heading-block--form {
+    margin: 38px auto 28px;
+
+    @media (min-width: $tablet-width) {
+      width: 435px;
+      margin: 64px auto 102px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 435px;
+      margin: 115px auto 74px;
       padding: 0;
     }
   }

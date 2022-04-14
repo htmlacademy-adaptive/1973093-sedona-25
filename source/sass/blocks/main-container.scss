@@ -1,23 +1,58 @@
 .main-container {
 
+  &__section-form {
+    padding: 0 18px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0 120px;
+    }
+  }
+
   &__intro {
     background-image: url("../../img/gallery/group13.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: block;
     margin: 0;
-    width: 320px;
     height: 389px;
     background-color: rgba(0, 0, 0, 1);
 
     @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__intro--form {
+    background-image: url("../../img/gallery/form/welcome-img-form.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    margin: 0;
+    height: 214px;
+    background-color: rgba(0, 0, 0, 1);
+
+    @media (min-width: $tablet-width) {
       width: 768px;
+      height: 290px;
       margin: 0;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 1200px;
+      height: 518px;
       margin: 0;
       padding: 0;
     }

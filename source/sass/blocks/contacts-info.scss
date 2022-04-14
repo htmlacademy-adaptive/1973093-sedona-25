@@ -1,4 +1,5 @@
 .contacts-info {
+
   &__phone-item {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +27,14 @@
     background-color: rgba(242, 242, 242, 1);
     border: none;
     box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 222px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 344px;
+    }
   }
 
   &__connection {

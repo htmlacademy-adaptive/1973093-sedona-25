@@ -2,41 +2,36 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
-      <header class="page__secondary-header main-header">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo-link" href="#">
-            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
-          </a>
-        </div>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper-left hidden">
-            <ul class="main-nav__list list">
-              <li class="list__item list__item--current">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="list__item">
-                <a>Фото и видео</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-nav__wrapper-rirht hidden">
-            <ul class="main-nav__list list">
-              <li class="list__item">
-                <a href="form.html">Форма отзыва</a>
-              </li>
-              <li class="list__item">
-                <a href="#">html academy</a>
-              </li>
-            </ul>
-          </div>
+      <header class="main-header">
+        <nav class="main-header__main-nav main-nav">
+          <ul class="main-nav__list list">
+            <li class="list__item list__item--current hidden">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="list__item hidden">
+              <a>Фото и видео</a>
+            </li>
+            <li class="list__item list__logo">
+              <a class="list__logo-link" href="#">
+                <img class="list__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
+              </a>
+            </li>
+            <li class="list__item hidden">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="list__item hidden">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
       </header>
       <main class="catalog-container">

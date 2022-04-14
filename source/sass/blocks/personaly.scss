@@ -1,6 +1,25 @@
 .personaly {
   width: 284px;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+  }
 
   &__presentation {
     margin: 0;
@@ -13,5 +32,15 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+      width: 280px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+      margin-bottom: 56px;
+    }
   }
 }
