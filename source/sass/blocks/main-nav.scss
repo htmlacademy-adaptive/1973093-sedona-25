@@ -1,22 +1,40 @@
 .main-nav {
   position: relative;
-  display: flex;
-
-  &__wrapper-left {
-    display: flex;
-    justify-content: space-around;
-  }
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: -40px;
+  // display: flex;
+  // justify-content: space-around;
+  // flex-grow: 1;
 
   &__list {
     display: flex;
-    align-items: center;
-    width: 306px;
+    justify-content: center;
+    margin: 0;
     padding: 0;
-    list-style-type: none;
-  }
 
-  &__wrapper-rirht {
-    display: flex;
-    justify-content: space-around;
+    @media (min-width: $tablet-width) {
+      // display: flex;
+      // align-items: center;
+      display: grid;
+      grid-template-columns: 153px 153px 153px 153px 153px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      // display: flex;
+      // align-items: center;
+      display: grid;
+      grid-template-columns: 240px 240px 240px 240px 240px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
   }
 }
+
+// .hidden {
+//   display: none;
+// }

@@ -1,9 +1,50 @@
 .list {
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // align-items: flex-start;
+  list-style-type: none;
 
   &__item {
-    min-width: 105px;
+    // display: flex;
+
+    @media (min-width: $tablet-width) {
+      justify-content: center;
+      width: 153px;
+      margin: 0;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      word-break: break-all;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 240px;
+      margin: 0;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      word-break: break-all;
+    }
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-left: -16px;
+      padding: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__logo-link {
+  }
+  &__logo-image {
   }
 
   // &__item--current {

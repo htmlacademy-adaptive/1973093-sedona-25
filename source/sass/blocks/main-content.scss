@@ -2,9 +2,34 @@
   &__list {
     margin: 0;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1200px;
+    }
   }
 
   &__heading-block {
     margin: 38px auto 28px;
+    padding: 0 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 520px;
+      margin: 48px auto 56px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 483px;
+      margin: 59px auto;
+      padding: 0;
+    }
   }
 }

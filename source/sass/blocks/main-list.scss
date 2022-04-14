@@ -1,5 +1,5 @@
 .main-list {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -8,10 +8,43 @@
 
 
   &__block {
-    width: 320px;
-    margin-left: -20px;
     background: rgba(238, 238, 238, 1);
     list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  }
+
+  &__secondary {
+    padding: 0 18px;
+    background: rgba(238, 238, 238, 1);
+    list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 256px;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: auto;
+      margin: 0;
+    }
   }
 
   &__block--primary {
@@ -19,29 +52,95 @@
     background: rgba(129, 179, 210, 1);
   }
 
+  &__corner {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__block-text {
+    @media (min-width: $tablet-width) {
+      padding: 42px 32px;
+      width: 256px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 53px;
+      width: 400px;
+      box-sizing: border-box;
+    }
+  }
+
   &__presentation {
     padding: 26px 26px 11px;
     margin: 0;
-  }
 
-  &__presentation--primary {
-    padding: 33px 22px 11px;
-    margin: 0;
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      font-size: 21px;
+      line-height: 21px;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
+      font-size: 21px;
+      line-height: 21px;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 20px;
+    }
   }
 
   &__number {
     padding: 0 22px 17px;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 26px;
+    }
   }
 
   &__description {
     padding: 0 26px 26px;
     margin: 0;
-  }
 
-  &__description--primary {
-    padding: 0 22px 40px;
-    margin: 0;
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__foto {
@@ -51,30 +150,99 @@
     margin: 0;
     padding: 0;
     display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 512px;
+      height: 256px;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
+      height: 256px;
+      display: block;
+    }
   }
 
   &__list {
     margin: 0;
-    padding: 0;
+    padding: 0 18px;
     background-color: rgba(255, 255, 255, 1);
     list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      padding: 0;
+    }
   }
 
   &__item {
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 256px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+    }
   }
 
   &__logo {
     position: absolute;
     top: 25px;
     left: 18px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 57px;
+      left: 154px;
+    }
+  }
+
+  &__text {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 157px 36px 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 157px 58px 80px;
+    }
   }
 
   &__title {
     margin: 0;
     padding: 31px 197px 16px 65px;
-    padding-left: 65px;
     color: rgba(0, 0, 0, 1);
+
+    @media (min-width: $tablet-width) {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 16px;
+    }
   }
 
   &__pros {
@@ -82,5 +250,36 @@
     padding: 0 30px 22px 65px;
     text-align: start;
     color: rgba(51, 51, 51, 1);
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__secondary-text {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 42px 33px 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      margin: 0;
+      padding: 43px 42px 62px;
+      box-sizing: border-box;
+    }
   }
 }

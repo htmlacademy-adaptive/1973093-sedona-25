@@ -1,22 +1,17 @@
 .main-header {
-  position: relative;
   background-color: rgba(255, 255, 255, 1);
-  display: block;
-  width: 284px;
 
-  &__logo-wrapper {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: -40px;
-    width: 185px;
-    height: 96px;
+  &__main-nav {
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 1200px;
+    }
   }
-
-  // &__logo-link {
-  // }
-
-  // &__logo-image {
-  // }
 
   &__toggle {
     position: absolute;
@@ -24,5 +19,20 @@
     height: 22px;
     top: 50%;
     right: 18px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
+
+  // &__logo-link {
+  // }
+
+  // &__logo-image {
+  // }
+
