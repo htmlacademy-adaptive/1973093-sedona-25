@@ -6,13 +6,11 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
-      // width: 768px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
       flex-wrap: wrap;
-      // width: 1200px;
     }
   }
 
@@ -45,6 +43,23 @@
     @media (min-width: $desktop-width) {
       width: 435px;
       margin: 115px auto 74px;
+      padding: 0;
+    }
+  }
+
+  &__heading-block--catalog {
+    margin: 33px auto 20px;
+    padding: 0 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      margin: 62px auto;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 458px;
+      margin: 100px auto 65px;
       padding: 0;
     }
   }

@@ -1,26 +1,51 @@
 .catalog-container {
-  &__wrapper {
+  &__presentation {
     margin: 0 auto;
-  }
+    padding: 0 18px;
 
-  &__intro {
-    margin: 0;
-    margin-top: -56px;
-    height: 214px;
-    background-color: rgba(0, 0, 0, 1);
+    @media (min-width: $tablet-width) {
+      padding: 0 60px;
+    }
 
-    &__presentation {
-      margin: 0 auto;
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 
   &__heading-block {
-    margin: 0 auto;
+    margin: 17px auto 38px;
+
+    @media (min-width: $tablet-width) {
+      width: 445px;
+      margin: 58px auto 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 445px;
+      margin: 62px auto 64px;
+    }
   }
 
   &__video {
-    margin: 0 auto;
-    width: 266px;
-    height: 116px;
+    background-image: url("../../img/catalog/video-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    margin: 0;
+    width: 280px;
+    height: 177px;
+    background-color: rgba(255, 255, 255, 1);
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 500px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
+      height: 500px;
+      margin: 0 auto 84px;
+    }
   }
 }
