@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    // position: relative;
   }
 
   &__item {
@@ -29,6 +29,15 @@
     }
   }
 
+  &__img-wrapper {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
   &__text-like {
     @media (min-width: $tablet-width) {
       display: flex;
@@ -36,11 +45,33 @@
       margin: 0;
       padding: 0;
       background-color: rgba(242, 242, 242, 1);
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      background-color: rgba(0, 0, 0, 0.3);
-      background: transparent;
+    &--first {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
+      }
     }
 
     &--north {
@@ -53,7 +84,13 @@
       }
 
       @media (min-width: $desktop-width) {
+        position: absolute;
         background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
       }
     }
   }
@@ -64,10 +101,6 @@
     height: 280px;
     padding-top: 24px;
     padding-bottom: 15px;
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: -80px;
-    }
 
     &--road {
       background-image: url("../../img/catalog/photo-road.jpg");
@@ -171,6 +204,12 @@
     }
 
     @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__svg-color {
+    @media (min-width: $desktop-width) {
+      fill: rgba(0, 0, 0, 1);
     }
   }
 
