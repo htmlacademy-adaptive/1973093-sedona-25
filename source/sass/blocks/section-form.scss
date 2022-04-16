@@ -5,8 +5,19 @@
   line-height: 26px;
   align-items: center;
 
-  // &__opinion {
-  // }
+  &__opinion {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
   &__personaly {
     margin: 0 auto;
@@ -17,17 +28,44 @@
   }
 
   &__radio {
-    margin: 0 auto;
+    margin: 0;
+    margin-bottom: 48px;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
   }
 
   &__checbox {
     margin: 0 auto;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
   }
 
   &__emotions {
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 64px;
+    }
   }
 
   &__wrapper-button {

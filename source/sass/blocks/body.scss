@@ -1,6 +1,22 @@
 .page {
   height: 100%;
 
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/ptsans.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../fonts/ptsansbold.woff2") format("woff2");
+    font-display: swap;
+  }
+
   &__body {
     min-height: 100%;
     display: grid;
@@ -8,22 +24,6 @@
     margin: 0;
     padding: 0;
     background-color: rgb(139, 134, 134);
-
-    @font-face {
-      font-family: "PT Sans";
-      font-style: normal;
-      font-weight: 400;
-      src: url("../../fonts/ptsans.woff2") format("woff2");
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: "PT Sans";
-      font-style: normal;
-      font-weight: 700;
-      src: url("../../fonts/ptsansbold.woff2") format("woff2");
-      font-display: swap;
-    }
   }
 
   &__body-wrapper {
@@ -41,7 +41,6 @@
       display: block;
       width: 1200px;
       margin: 0 auto;
-      padding: 0 40px;
     }
   }
 

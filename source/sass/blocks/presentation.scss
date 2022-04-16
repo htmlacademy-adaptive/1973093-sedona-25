@@ -13,6 +13,15 @@
   &__foto {
     margin: 0 auto;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 
   &__title {

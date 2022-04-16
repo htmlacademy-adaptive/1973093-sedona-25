@@ -2,117 +2,138 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
-      <header class="page__secondary-header main-header">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo-link" href="#">
-            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
-          </a>
-        </div>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper-left hidden">
-            <ul class="main-nav__list list">
-              <li class="list__item list__item--current">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="list__item">
-                <a>Фото и видео</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-nav__wrapper-rirht hidden">
-            <ul class="main-nav__list list">
-              <li class="list__item">
-                <a href="form.html">Форма отзыва</a>
-              </li>
-              <li class="list__item">
-                <a href="#">html academy</a>
-              </li>
-            </ul>
-          </div>
+      <header class="main-header">
+        <nav class="main-header__main-nav main-nav">
+          <ul class="main-nav__list list">
+            <li class="list__item list__item--current hidden">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="list__item hidden">
+              <a>Фото и видео</a>
+            </li>
+            <li class="list__item list__logo">
+              <a class="list__logo-link" href="#">
+                <img class="list__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
+              </a>
+            </li>
+            <li class="list__item hidden">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="list__item hidden">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
       </header>
-      <main class="catalog-container">
-        <div class="catalog-container__wrapper">
-          <h1 class="visually-hidden">Страница формы.</h1>
-          <div class="catalog-container__intro intro">
-            <img src="img/gallery/form/welcome-img-form.svg" alt="Добро пожаловать." class="intro__image">
-          </div>
-          <section class="catalog-container__presentation presentation">
-            <div class="presentation__text heading-block">
-              <h2 class="heading-block__slogan">Фото и видео</h2>
-              <p class="heading-block__advantages">Не можете решиться на путешествие из-за курса?
-                Фотографии помогут вам забыть о политике и экономике.</p>
-            </div>
-            <ul class="presentation__foto foto-list">
-              <li class="foto-list__item">
-                <img class="foto-list__image" src="img/catalog/photo-road.jpg" alt="Фото дороги.">
-                <h3 class="foto-list__heading">Неродные просторы</h3>
-                <p class="foto-list__autor">Автор фото: Борис</p>
-                <div class="foto-list__wrapper list-wrapper">
-                  <span class="list-wrapper__like">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </span>
-                  <span class="list-wrapper__liked">1350</span>
+      <main class="main-container">
+        <h1 class="visually-hidden">Страница каталога.</h1>
+        <div class="main-container__intro--form intro"></div>
+        <header class="main-content__heading-block--catalog heading-block">
+          <h2 class="visually-hidden">Страница с фото и видео.</h2>
+          <p class="heading-block__slogan">Фото и видео</p>
+          <p class="heading-block__advantages">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.</p>
+        </header>
+        <section class="catalog-container__presentation presentation">
+          <ul class="presentation__foto foto-list">
+            <li class="foto-list__item">
+              <div class="foto-list__img-wrapper">
+                  <img class="foto-list__image--road">
+
+                <!-- <img class="foto-list__image" src="img/catalog/photo-road.jpg" alt="Фото дороги."> -->
+                <div class="foto-list__text-like foto-list__text-like--first">
+                  <div class="foto-list__text-wrapper">
+                    <h3 class="foto-list__heading">Неродные просторы</h3>
+                    <p class="foto-list__autor">Автор фото: Борис</p>
+                  </div>
+                  <div class="foto-list__wrapper-like list-wrapper">
+                    <span class="list-wrapper__like">
+                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="list-wrapper__liked">1350</span>
+                  </div>
                 </div>
-              </li>
-              <li class="foto-list__item">
-                <img class="foto-list__image" src="img/catalog/photo-flower.jpg" alt="Фото цветка.">
-                <h3 class="foto-list__heading">Местная растительность</h3>
-                <p class="foto-list__autor">Автор фото: Сергей</p>
-                <div class="foto-list__wrapper list-wrapper">
-                  <span class="list-wrapper__like">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </span>
-                  <span class="list-wrapper__liked">143</span>
+              </div>
+            </li>
+            <li class="foto-list__item">
+              <div class="foto-list__img-wrapper">
+                <img class="foto-list__image--flower">
+                <!-- <img class="foto-list__image--flower" src="img/catalog/photo-flower.jpg" alt="Фото цветка."> -->
+                <div class="foto-list__text-like">
+                  <div class="foto-list__text-wrapper">
+                    <h3 class="foto-list__heading">Местная растительность</h3>
+                    <p class="foto-list__autor">Автор фото: Сергей</p>
+                  </div>
+                  <div class="foto-list__wrapper-like list-wrapper">
+                    <span class="list-wrapper__like">
+                      <svg class="foto-list__svg-color" aria-hidden="true" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                      </svg>
+                    </span>
+                    <span class="list-wrapper__liked">143</span>
+                  </div>
                 </div>
-              </li>
-              <li class="foto-list__item">
-                <img class="foto-list__image" src="img/catalog/photo-landscape.jpg" alt="Фото пейзажа.">
-                <h3 class="foto-list__heading">Дорога на север</h3>
-                <p class="foto-list__autor">Автор фото: Петр</p>
-                <div class="foto-list__wrapper list-wrapper">
-                  <span class="list-wrapper__like">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </span>
-                  <span class="list-wrapper__liked">96</span>
+              </div>
+            </li>
+            <li class="foto-list__item">
+              <div class="foto-list__img-wrapper">
+                <img class="foto-list__image--landscape">
+                <!-- <img class="foto-list__image--landscape" src="img/catalog/photo-landscape.jpg" alt="Фото пейзажа."> -->
+                <div class="foto-list__text-like--north">
+                  <div class="foto-list__text-wrapper">
+                    <h3 class="foto-list__heading">Дорога на север</h3>
+                    <p class="foto-list__autor">Автор фото: Петр</p>
+                  </div>
+                  <div class="foto-list__wrapper-like list-wrapper">
+                    <span class="list-wrapper__like">
+                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="list-wrapper__liked">96</span>
+                  </div>
                 </div>
-              </li>
-              <li class="foto-list__item">
-                <img class="foto-list__image" src="img/catalog/photo-canyon.jpg" alt="Фото каньона.">
-                <h3 class="foto-list__heading">Мост дьявола</h3>
-                <p class="foto-list__autor">Автор фото: Антон</p>
-                <div class="foto-list__wrapper list-wrapper">
-                  <span class="list-wrapper__like">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </span>
-                  <span class="list-wrapper__liked">254</span>
+              </div>
+            </li>
+            <li class="foto-list__item">
+              <div class="foto-list__img-wrapper">
+                <img class="foto-list__image--canyon">
+                <!-- <img class="foto-list__image--canyon" src="img/catalog/photo-canyon.jpg" alt="Фото каньона."> -->
+                <div class="foto-list__text-like">
+                  <div class="foto-list__text-wrapper">
+                    <h3 class="foto-list__heading">Мост дьявола</h3>
+                    <p class="foto-list__autor">Автор фото: Антон</p>
+                  </div>
+                  <div class="foto-list__wrapper-like list-wrapper">
+                    <span class="list-wrapper__like">
+                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="list-wrapper__liked">254</span>
+                  </div>
                 </div>
-              </li>
-            </ul>
-            <footer class="catalog-container__heading-block heading-block">
-              <h2 class="heading-block__slogan">Все еще сомневаетесь?</h2>
-              <p class="heading-block__advantages">Смотрите видеопрезентацию и скорее за билетами,
-                пока они не подорожали в очередной раз!</p>
-            </footer>
-            <img class="catalog-container__video" src="img/catalog/video-mobile.jpg" alt="Видео презентация.">
-          </section>
-        </div>
+              </div>
+            </li>
+          </ul>
+          <footer class="catalog-container__heading-block heading-block">
+            <h2 class="heading-block__slogan--catalog-footer">Все еще сомневаетесь?</h2>
+            <p class="heading-block__advantages">Смотрите видеопрезентацию и скорее за билетами,
+              пока они не подорожали в очередной раз!</p>
+          </footer>
+          <img class="catalog-container__video" src="img/catalog/video-mobile.jpg" alt="Видео презентация.">
+        </section>
       </main>
       <footer class="main-footer">
         <div class="main-footer__hashtag hashtag">

@@ -6,8 +6,93 @@
   align-items: center;
   list-style-type: none;
 
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+    // position: relative;
+  }
+
   &__item {
     margin: 0 auto;
+    padding: 24px 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__img-wrapper {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__text-like {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(242, 242, 242, 1);
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    &--first {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    &--north {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(234, 234, 234, 1);
+      }
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
   }
 
   &__image {
@@ -16,6 +101,116 @@
     height: 280px;
     padding-top: 24px;
     padding-bottom: 15px;
+
+    &--road {
+      background-image: url("../../img/catalog/photo-road.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
+      margin: 0;
+      width: 280px;
+      height: 280px;
+      background-color: rgba(255, 255, 255, 1);
+
+      @media (min-width: $tablet-width) {
+        width: 648px;
+        height: 400px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 1200px;
+        height: 400px;
+      }
+    }
+
+    &--flower {
+      background-image: url("../../img/catalog/photo-flower.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
+      margin: 0;
+      width: 280px;
+      height: 280px;
+      background-color: rgba(255, 255, 255, 1);
+
+      @media (min-width: $tablet-width) {
+        width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 400px;
+        height: 267px;
+      }
+    }
+
+    &--landscape {
+      background-image: url("../../img/catalog/photo-landscape.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
+      margin: 0;
+      width: 280px;
+      height: 280px;
+      background-color: rgba(255, 255, 255, 1);
+
+      @media (min-width: $tablet-width) {
+        width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 400px;
+        height: 267px;
+      }
+    }
+
+    &--canyon {
+      background-image: url("../../img/catalog/photo-canyon.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
+      margin: 0;
+      width: 280px;
+      height: 280px;
+      background-color: rgba(255, 255, 255, 1);
+
+      @media (min-width: $tablet-width) {
+        width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 400px;
+        height: 267px;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    @media (min-width: $tablet-width) {
+      min-width: 140px;
+      margin: 22px 0 15px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__wrapper-like {
+    @media (min-width: $tablet-width) {
+      min-width: 48px;
+      margin: 28px 20px 28px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &__svg-color {
+    @media (min-width: $desktop-width) {
+      fill: rgba(0, 0, 0, 1);
+    }
   }
 
   &__heading {
