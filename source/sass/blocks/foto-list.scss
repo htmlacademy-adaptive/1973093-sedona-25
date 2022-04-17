@@ -6,35 +6,19 @@
   align-items: center;
   list-style-type: none;
 
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-    // position: relative;
-  }
-
   &__item {
     margin: 0 auto;
     padding: 24px 0;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       margin: 0;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
-    }
-  }
-
-  &__img-wrapper {
-    @media (min-width: $tablet-width) {
       position: relative;
-    }
-
-    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
     }
   }
 

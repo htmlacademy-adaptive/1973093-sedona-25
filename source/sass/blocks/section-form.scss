@@ -19,11 +19,7 @@
     }
   }
 
-  &__personaly {
-    margin: 0 auto;
-  }
-
-  &__contacts {
+  &__controls {
     margin: 0 auto;
   }
 
@@ -59,8 +55,7 @@
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      margin: 0;
-      margin-bottom: 64px;
+      margin: 0 auto 64px;
     }
 
     @media (min-width: $desktop-width) {
