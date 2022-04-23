@@ -1,5 +1,4 @@
 .main-container {
-
   &__section-form {
     padding: 0 18px;
 
@@ -15,7 +14,7 @@
   }
 
   &__intro {
-    background-image: url("../../img/gallery/group13.svg");
+    background-image: url("../../img/gallery/index/intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: block;
@@ -24,13 +23,25 @@
     background-color: rgba(0, 0, 0, 1);
 
     @media (min-width: $tablet-width) {
+      background-image: url("../../img/gallery/index/Intro-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
       margin: 0;
       padding: 0;
+      height: 518px;
+      background-color: rgba(0, 0, 0, 1);
     }
 
     @media (min-width: $desktop-width) {
+      background-image: url("../../img/gallery/index/intro-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
       margin: 0;
       padding: 0;
+      height: 518px;
+      background-color: rgba(0, 0, 0, 1);
     }
   }
 
@@ -44,17 +55,27 @@
     background-color: rgba(0, 0, 0, 1);
 
     @media (min-width: $tablet-width) {
+      background-image: url("../../img/gallery/form/welcome-img-form-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
       width: 768px;
-      height: 290px;
+      height: 345px;
       margin: 0;
       padding: 0;
+      background-color: rgba(0, 0, 0, 1);
     }
 
     @media (min-width: $desktop-width) {
+      background-image: url("../../img/gallery/form/welcome-img-form-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
       width: 1200px;
-      height: 518px;
+      height: 356px;
       margin: 0;
       padding: 0;
+      background-color: rgba(0, 0, 0, 1);
     }
   }
 }

@@ -14,6 +14,19 @@
   word-break: break-all;
   justify-content: center;
 
+  &:hover {
+    background-color: rgba(102, 158, 192, 1);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(84, 150, 189, 1);
+  }
+
+  &--disabled:disabled {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto 58px;

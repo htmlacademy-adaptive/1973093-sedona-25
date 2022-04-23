@@ -1,10 +1,38 @@
 .list {
-  // display: flex;
-  // align-items: flex-start;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: 56px 56px 56px 56px;
+  text-decoration: none;
   list-style-type: none;
+  background-color: rgba(129, 179, 210, 1);
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    word-break: break-all;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    word-break: break-all;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 0;
+  }
 
   &__item {
-    // display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(1, 1, 1, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    word-break: break-all;
 
     @media (min-width: $tablet-width) {
       justify-content: center;
@@ -24,29 +52,85 @@
     }
   }
 
-  &__logo {
-    margin: 0;
-    padding: 0;
+  .main-nav--opened &__item--first {
+    padding-left: 60px;
+    padding-right: 60px;
 
     @media (min-width: $tablet-width) {
-      margin: 0;
-      margin-left: -16px;
       padding: 0;
     }
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: center;
-      margin: 0;
+    @media (min-width: $desktop-width) {
       padding: 0;
+    }
+  }
+
+  &__item-link {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+
+    @media (min-width: $tablet-width) {
+      color: rgba(0, 0, 0, 1);
+    }
+
+    @media (min-width: $desktop-width) {
+      color: rgba(0, 0, 0, 1);
+    }
+
+    &--current {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 1);
+
+      @media (min-width: $tablet-width) {
+        color: rgba(118, 99, 87, 1);
+      }
+
+      @media (min-width: $desktop-width) {
+        color: rgba(118, 99, 87, 1);
+      }
     }
   }
 
   &__logo-link {
+    position: absolute;
+    top: 0;
+    left: 67px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 291px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      left: 507px;
+    }
   }
+
   &__logo-image {
   }
 
   // &__item--current {
+  //   font-family: "PT Sans", sans-serif;
+  //   font-weight: 700;
+  //   font-size: 14px;
+  //   line-height: 21px;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   color: rgba(118, 99, 87, 1);
   // }
 }
