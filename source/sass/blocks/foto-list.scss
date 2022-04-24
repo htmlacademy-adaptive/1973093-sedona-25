@@ -6,35 +6,19 @@
   align-items: center;
   list-style-type: none;
 
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-    // position: relative;
-  }
-
   &__item {
     margin: 0 auto;
     padding: 24px 0;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       margin: 0;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
-    }
-  }
-
-  &__img-wrapper {
-    @media (min-width: $tablet-width) {
       position: relative;
-    }
-
-    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -103,7 +87,7 @@
     padding-bottom: 15px;
 
     &--road {
-      background-image: url("../../img/catalog/photo-road.jpg");
+      background-image: url("../../img/gallery/catalog/photo-road.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: block;
@@ -113,18 +97,20 @@
       background-color: rgba(255, 255, 255, 1);
 
       @media (min-width: $tablet-width) {
+        background-image: url("../../img/gallery/catalog/photo-road-tablet.jpg");
         width: 648px;
         height: 400px;
       }
 
       @media (min-width: $desktop-width) {
+        background-image: url("../../img/gallery/catalog/photo-road-desktop.jpg");
         width: 1200px;
         height: 400px;
       }
     }
 
     &--flower {
-      background-image: url("../../img/catalog/photo-flower.jpg");
+      background-image: url("../../img/gallery/catalog/photo-flower.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: block;
@@ -134,18 +120,20 @@
       background-color: rgba(255, 255, 255, 1);
 
       @media (min-width: $tablet-width) {
+        background-image: url("../../img/gallery/catalog/photo-flower-tablet.jpg");
         width: 324px;
         height: 267px;
       }
 
       @media (min-width: $desktop-width) {
+        background-image: url("../../img/gallery/catalog/photo-flower-desktop.jpg");
         width: 400px;
         height: 267px;
       }
     }
 
     &--landscape {
-      background-image: url("../../img/catalog/photo-landscape.jpg");
+      background-image: url("../../img/gallery/catalog/photo-landscape.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: block;
@@ -155,18 +143,20 @@
       background-color: rgba(255, 255, 255, 1);
 
       @media (min-width: $tablet-width) {
+        background-image: url("../../img/gallery/catalog/photo-landscape-tablet.jpg");
         width: 324px;
         height: 267px;
       }
 
       @media (min-width: $desktop-width) {
+        background-image: url("../../img/gallery/catalog/photo-landscape-desktop.jpg");
         width: 400px;
         height: 267px;
       }
     }
 
     &--canyon {
-      background-image: url("../../img/catalog/photo-canyon.jpg");
+      background-image: url("../../img/gallery/catalog/photo-canyon.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: block;
@@ -176,11 +166,13 @@
       background-color: rgba(255, 255, 255, 1);
 
       @media (min-width: $tablet-width) {
+        background-image: url("../../img/gallery/catalog/photo-canyon-tablet.jpg");
         width: 324px;
         height: 267px;
       }
 
       @media (min-width: $desktop-width) {
+        background-image: url("../../img/gallery/catalog/photo-canyon-desktop.jpg");
         width: 400px;
         height: 267px;
       }

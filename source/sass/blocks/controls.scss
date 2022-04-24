@@ -1,4 +1,4 @@
-.personaly {
+.controls {
   width: 284px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -28,7 +28,7 @@
     word-break: break-all;
   }
 
-  &__personaly-list {
+  &__controls-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -41,6 +41,22 @@
     @media (min-width: $desktop-width) {
       width: 430px;
       margin-bottom: 56px;
+    }
+
+    &--secondary {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      @media (min-width: $tablet-width) {
+        width: 280px;
+        margin-left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 430px;
+        margin-bottom: 56px;
+      }
     }
   }
 }

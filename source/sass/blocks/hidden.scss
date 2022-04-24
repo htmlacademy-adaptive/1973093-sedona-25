@@ -1,7 +1,23 @@
 .hidden {
-  display: none;
+  // display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
