@@ -67,21 +67,56 @@
     }
   }
 
-  // &__item--checked {
-  // }
+  &__item-bridge {
+    position: relative;
+  }
 
-  // &__item-bridge {
-  // }
+  &__mark {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: -10px;
+    background: rgba(242, 242, 242, 1);
+    border-radius: 4px;
 
-  // &__item-input {
-  // }
+    .attractions__item-input:checked + & {
+      width: 46px;
+      height: 46px;
+      background-image: url("../../img/tick.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      content: "";
+    }
 
-  // &__item-mountain {
-  // }
+    .attractions__item-bridge:hover &,
+    .attractions__item-mountain:hover &,
+    .attractions__item-park:hover &,
+    .attractions__item-rock:hover & {
+      background-color: rgba(229, 229, 229, 1);
+    }
 
-  // &__item-park {
-  // }
+    .attractions__item-bridge:active &,
+    .attractions__item-mountain:active &,
+    .attractions__item-park:active &,
+    .attractions__item-rock:active {
+      background-color: rgba(213, 213, 213, 1);
+      opacity: 0.3;
+    }
+  }
 
-  // &__item-rock {
-  // }
+  &__label {
+    padding-left: 62px;
+  }
+
+  &__item-mountain {
+    position: relative;
+  }
+
+  &__item-park {
+    position: relative;
+  }
+
+  &__item-rock {
+    position: relative;
+  }
 }

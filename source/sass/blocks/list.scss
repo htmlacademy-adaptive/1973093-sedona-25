@@ -34,6 +34,21 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     word-break: break-all;
 
+    &:hover {
+      background-color: rgba(102, 158, 192, 1);
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(84, 150, 189, 1);
+    }
+
+    &:active,
+    &:active .list__item-link {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(84, 150, 189, 1);
+    }
+
     @media (min-width: $tablet-width) {
       justify-content: center;
       width: 153px;
