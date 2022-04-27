@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -33,34 +35,16 @@
           </button>
         </nav>
       </header>
-      <!-- <header class="main-header">
-        <nav class="main-header__main-nav main-nav">
-          <ul class="main-nav__list list">
-            <li class="list__item list__item hidden">
-              <a class="list__item-link--current" href="index.html">Главная</a>
-            </li>
-            <li class="list__item hidden">
-              <a class="list__item-link">Фото и видео</a>
-            </li>
-            <li class="list__item hidden"></li>
-            <li class="list__item hidden">
-              <a class="list__item-link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="list__item hidden">
-              <a class="list__item-link" href="#">html academy</a>
-            </li>
-          </ul>
-          <a class="list__logo-link" href="#">
-            <img class="list__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </nav>
-      </header> -->
       <main class="main-container">
         <h1 class="visually-hidden">Страница каталога.</h1>
-        <div class="main-container__intro--form intro"></div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/gallery/form/welcome-img-form-desktop.svg 1x,
+          ./img/gallery/form/welcome-img-form-desktop@2x.svg 2x">
+          <source media="(min-width: 768px)" srcset="./img/gallery/form/welcome-img-form-tablet.svg 1x,
+          ./img/gallery/form/welcome-img-form-tablet@2x.svg 2x">
+          <img class="main-container__intro--form intro" src="./img/gallery/form/welcome-img-form.svg"
+           srcset="./img/gallery/form/welcome-img-form@2x.svg 2x" alt="Презентация.">
+        </picture>
         <header class="main-content__heading-block--catalog heading-block">
           <h2 class="visually-hidden">Страница с фото и видео.</h2>
           <p class="heading-block__slogan">Фото и видео</p>
@@ -70,9 +54,16 @@
         <section class="catalog-container__presentation presentation">
           <ul class="presentation__foto foto-list">
             <li class="foto-list__item">
-              <img class="foto-list__image--road">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/catalog/photo-road-desktop.jpg 1x,
+                 ./img/gallery/catalog/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/catalog/photo-road-tablet.jpg 1x,
+                 ./img/gallery/catalog/photo-road-tablet@2x.jpg 2x">
+                <img class="foto-list__image--road" src="./img/gallery/catalog/photo-road.jpg"
+                 srcset="./img/gallery/catalog/photo-road@2x.jpg 2x" alt="Фото заката.">
+              </picture>
               <div class="foto-list__text-like foto-list__text-like--first">
-                <div class="foto-list__text-wrapper">
+                <div class="foto-list__text-wrapper foto-list__text-wrapper--main">
                   <h3 class="foto-list__heading">Неродные просторы</h3>
                   <p class="foto-list__autor">Автор фото: Борис</p>
                 </div>
@@ -87,7 +78,14 @@
               </div>
             </li>
             <li class="foto-list__item">
-              <img class="foto-list__image--flower">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/catalog/photo-flower-desktop.jpg 1x,
+                 ./img/gallery/catalog/photo-flower-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/catalog/photo-flower-tablet.jpg 1x,
+                 ./img/gallery/catalog/photo-flower-tablet@2x.jpg 2x">
+                <img class="foto-list__image--flower" src="./img/gallery/catalog/photo-flower.jpg"
+                 srcset="./img/gallery/catalog/photo-flower@2x.jpg 2x" alt="Фото растительности.">
+              </picture>
               <div class="foto-list__text-like">
                 <div class="foto-list__text-wrapper">
                   <h3 class="foto-list__heading">Местная растительность</h3>
@@ -104,7 +102,14 @@
               </div>
             </li>
             <li class="foto-list__item">
-              <img class="foto-list__image--landscape">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/catalog/photo-landscape-desktop.jpg 1x,
+                 ./img/gallery/catalog/photo-landscape-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/catalog/photo-landscape-tablet.jpg 1x,
+                 ./img/gallery/catalog/photo-landscape-tablet@2x.jpg 2x">
+                <img class="foto-list__image--landscape" src="./img/gallery/catalog/photo-landscape.jpg"
+                 srcset="./img/gallery/catalog/photo-landscape@2x.jpg 2x" alt="Фото пейзажа.">
+              </picture>
               <div class="foto-list__text-like--north">
                 <div class="foto-list__text-wrapper">
                   <h3 class="foto-list__heading">Дорога на север</h3>
@@ -121,7 +126,14 @@
               </div>
             </li>
             <li class="foto-list__item">
-              <img class="foto-list__image--canyon">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/catalog/photo-canyon-desktop.jpg 1x,
+                 ./img/gallery/catalog/photo-canyon-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/catalog/photo-canyon-tablet.jpg 1x,
+                 ./img/gallery/catalog/photo-canyon-tablet@2x.jpg 2x">
+                <img class="foto-list__image--canyon" src="./img/gallery/catalog/photo-canyon.jpg"
+                 srcset="./img/gallery/catalog/photo-canyon@2x.jpg 2x" alt="Фото каньона.">
+              </picture>
               <div class="foto-list__text-like">
                 <div class="foto-list__text-wrapper">
                   <h3 class="foto-list__heading">Мост дьявола</h3>
@@ -143,7 +155,14 @@
             <p class="heading-block__advantages">Смотрите видеопрезентацию и скорее за билетами,
               пока они не подорожали в очередной раз!</p>
           </footer>
-          <img class="catalog-container__video">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/gallery/catalog/video-desktop.jpg 1x,
+             ./img/gallery/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/gallery/catalog/video-tablet.jpg 1x,
+             ./img/gallery/catalog/video-tablet@2x.jpg 2x">
+            <img class="catalog-container__video" src="./img/gallery/catalog/video-mobile.jpg"
+             srcset="./img/gallery/catalog/video-mobile@2x.jpg 2x" alt="Видео.">
+          </picture>
         </section>
       </main>
       <footer class="main-footer">

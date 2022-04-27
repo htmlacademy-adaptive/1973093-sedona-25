@@ -27,9 +27,9 @@
   }
 
   &__video {
-    background-image: url("../../img/gallery/catalog/video-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    // background-image: url("../../img/gallery/catalog/video-mobile.jpg");
+    // background-repeat: no-repeat;
+    // background-size: 100% auto;
     display: block;
     margin: 0;
     width: 280px;
@@ -37,14 +37,14 @@
     background-color: rgba(255, 255, 255, 1);
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/gallery/catalog/video-tablet.jpg");
+      // background-image: url("../../img/gallery/catalog/video-tablet.jpg");
       width: 648px;
       height: 500px;
       margin-bottom: 40px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/gallery/catalog/video-desktop.jpg");
+      // background-image: url("../../img/gallery/catalog/video-desktop.jpg");
       width: 800px;
       height: 500px;
       margin: 0 auto 84px;

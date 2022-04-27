@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -35,7 +37,14 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Городок Седона.</h1>
-        <div class="main-container__intro intro"></div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.svg 1x,
+          ./img/gallery/index/intro-desktop@2x.svg 2x">
+          <source media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.svg 1x,
+          ./img/gallery/index/intro-tablet@2x.svg 2x">
+          <img class="main-container__intro intro" src="./img/gallery/index/intro-mobile.svg"
+           srcset="./img/gallery/index/intro-mobile@2x.svg 2x" alt="Презентация.">
+        </picture>
         <section class="main-content">
           <header class="main-content__heading-block heading-block">
             <h2 class="visually-hidden">Презантация Седоны.</h2>
@@ -53,7 +62,14 @@
                     там течет своя жизнь</p>
                 </div>
               </div>
-              <img class="main-list__foto--first">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/index/photo-1index-desktop.jpg 1x,
+                ./img/gallery/index/photo-1index-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/index/photo-1index-tablet.jpg 1x,
+                ./img/gallery/index/photo-1index-tablet@2x.jpg 2x">
+                <img class="main-list__foto--first" src="./img/gallery/index/photo-1index.jpg"
+                 srcset="./img/gallery/index/photo-1index@2x.jpg 2x" alt="Фото улиц.">
+              </picture>
               <ul class="main-list__list">
                 <li class="main-list__item">
                   <span class="main-list__logo">
@@ -112,7 +128,14 @@
                 <p class="main-list__description main-list__description--primary">Да, по можно пройти! Если вы<br>
                   осмелитесь, конечно</p>
               </div>
-              <img class="main-list__foto--secondary">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/gallery/index/photo-2index-desktop.jpg 1x,
+                ./img/gallery/index/photo-2index-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/gallery/index/photo-2index-tablet.jpg 1x,
+                ./img/gallery/index/photo-2index-tablet@2x.jpg 2x">
+                <img class="main-list__foto--secondary" src="./img/gallery/index/photo-2index.jpg"
+                 srcset="./img/gallery/index/photo-2index@2x.jpg 2x" alt="Фото улиц.">
+              </picture>
             </li>
             <li class="main-list__block main-list__secondary">
               <div class="main-list__secondary-text">
@@ -144,7 +167,14 @@
               гостиниц в Седоне</p>
           </div>
           <a class="wrapper-link wrapper-link--disabled" href="#">Найти гостиницу</a>
-          <span class="hotel-search__map"></span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/gallery/index/map-desktop.jpg 1x,
+            ./img/gallery/index/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/gallery/index/map-tablet.jpg 1x,
+            ./img/gallery/index/map-tablet@2x.jpg 2x">
+            <img class="hotel-search__map" src="./img/gallery/index/map-mobile.jpg"
+             srcset="./img/gallery/index/map-mobile@2x.jpg 2x" alt="Фото улиц.">
+          </picture>
         </section>
       </main>
       <footer class="main-footer">

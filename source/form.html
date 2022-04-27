@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -33,34 +35,16 @@
           </button>
         </nav>
       </header>
-      <!-- <header class="main-header">
-        <nav class="main-header__main-nav main-nav">
-          <ul class="main-nav__list list">
-            <li class="list__item list__item hidden">
-              <a class="list__item-link--current" href="index.html">Главная</a>
-            </li>
-            <li class="list__item hidden">
-              <a class="list__item-link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="list__item hidden"></li>
-            <li class="list__item hidden">
-              <a class="list__item-link">Форма отзыва</a>
-            </li>
-            <li class="list__item hidden">
-              <a class="list__item-link" href="#">html academy</a>
-            </li>
-          </ul>
-          <a class="list__logo-link" href="#">
-            <img class="list__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </nav>
-      </header> -->
       <main class="main-container">
         <h1 class="visually-hidden">Страница формы.</h1>
-        <div class="main-container__intro--form intro"></div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/gallery/form/welcome-img-form-desktop.svg 1x,
+          ./img/gallery/form/welcome-img-form-desktop@2x.svg 2x">
+          <source media="(min-width: 768px)" srcset="./img/gallery/form/welcome-img-form-tablet.svg 1x,
+          ./img/gallery/form/welcome-img-form-tablet@2x.svg 2x">
+          <img class="main-container__intro--form intro" src="./img/gallery/form/welcome-img-form.svg"
+           srcset="./img/gallery/form/welcome-img-form@2x.svg 2x" alt="Презентация.">
+        </picture>
         <header class="main-content__heading-block--form heading-block">
           <h2 class="visually-hidden">Презантация Седоны.</h2>
           <p class="heading-block__slogan">Оставьте свой отзыв</p>
