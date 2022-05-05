@@ -13,6 +13,11 @@
     }
   }
 
+  &--secondary {
+    position: relative;
+    top: -57px;
+  }
+
   &__intro {
     // background-image: url("../../img/gallery/index/intro-mobile.svg");
     // background-repeat: no-repeat;
