@@ -53,17 +53,17 @@
   &__map {
     display: block;
     margin-bottom: 10px;
-    background-image: url("../../img/gallery/index/map-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    // background-image: url("../../img/gallery/index/map-mobile.jpg");
+    // background-repeat: no-repeat;
+    // background-size: 100% auto;
     width: 320px;
     height: 350px;
 
     @media (min-width: $tablet-width) {
       display: block;
-      background-image: url("../../img/gallery/index/map-tablet.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
+      // background-image: url("../../img/gallery/index/map-tablet.jpg");
+      // background-repeat: no-repeat;
+      // background-size: 100% auto;
       width: 768px;
       height: 350px;
       margin: 0;
@@ -71,9 +71,9 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      background-image: url("../../img/gallery/index/map-desktop.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
+      // background-image: url("../../img/gallery/index/map-desktop.jpg");
+      // background-repeat: no-repeat;
+      // background-size: 100% auto;
       width: 1200px;
       height: 350px;
       margin: 0;

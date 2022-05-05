@@ -1,6 +1,4 @@
 .hidden {
-  // display: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -9,15 +7,15 @@
     display: flex;
   }
 
-  &__list {
-    display: none;
+  // &--list {
+  //   display: none;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
+  //   @media (min-width: $tablet-width) {
+  //     display: flex;
+  //   }
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     display: flex;
+  //   }
+  // }
 }
