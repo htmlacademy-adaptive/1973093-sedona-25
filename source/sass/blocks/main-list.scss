@@ -262,18 +262,67 @@
     left: 0;
 
     @media (min-width: $tablet-width) {
-      top: 57px;
-      left: 91px;
+
+      top: 60px;
+      left: 90px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 57px;
-      left: 154px;
+      top: 59px;
+      left: 161px;
     }
 
     &--surprise {
       width: 40px;
       height: 40px;
+
+      @media (min-width: $tablet-width) {
+        right: 97px;
+        width: auto;
+        height: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 170px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  &__logo-house {
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 75px;
+      height: 73px;
+    }
+  }
+
+  &__logo-food {
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 75px;
+      height: 69px;
+    }
+  }
+
+  &__logo-surprise {
+    @media (min-width: $tablet-width) {
+      width: 63px;
+      height: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 64px;
+      height: 75px;
     }
   }
 

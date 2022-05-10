@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
   </head>
   <body class="page__body">
-    <svg>
+    <svg style="display: none">
       <symbol viewBox="0 0 39 37" fill="none" id="logo-house">
         <path d="M15.4015 33.2194H23.7549V21.0613H15.4015V33.2194ZM22.2408 31.7441H16.9155V22.5365H22.1886V31.7441H22.2408Z" fill="#81B3D2"/>
         <path d="M37.9036 20.0431L39 18.9748L33.8313 13.9386V0.203483H26.6265V6.91843L19.4739 0L0 19.0257L1.09639 20.094L5.16867 16.126V35.3552H3.13253V36.8305H36.494V35.3552H33.8313V16.0752L37.9036 20.0431ZM28.1406 1.72961H32.2651V12.4633L28.1406 8.44455V1.72961ZM32.3173 35.3043H6.73494V14.5999L19.4739 2.13657L32.2651 14.5999V35.3043H32.3173Z" fill="#81B3D2"/>
@@ -73,12 +73,19 @@
       <main class="main-container">
         <h1 class="visually-hidden">Городок Седона.</h1>
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.svg 1x,
-          ./img/gallery/index/intro-desktop@2x.svg 2x">
-          <source media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.svg 1x,
-          ./img/gallery/index/intro-tablet@2x.svg 2x">
-          <img class="main-container__intro intro" src="./img/gallery/index/intro-mobile.svg"
-           srcset="./img/gallery/index/intro-mobile@2x.svg 2x" alt="Презентация.">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.webp 1x,
+          ./img/gallery/index/intro-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.webp 1x,
+          ./img/gallery/index/intro-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/gallery/index/intro-mobile.webp 1x,
+           ./img/gallery/index/intro-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.png 1x,
+          ./img/gallery/index/intro-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.png 1x,
+          ./img/gallery/index/intro-tablet@2x.png 2x">
+          <img class="main-container__intro intro" src="./img/gallery/index/intro-mobile.png"
+           srcset="./img/gallery/index/intro-mobile@2x.png 2x" alt="Презентация.">
         </picture>
         <section class="main-content">
           <header class="main-content__heading-block heading-block">
@@ -151,7 +158,7 @@
                 </li>
                 <li class="main-list__item">
                   <span class="main-list__logo main-list__logo--surprise">
-                    <svg width="32" height="38">
+                    <svg class="main-list__logo-surprise" width="32" height="38">
                       <use href="#logo-surprise"></use>
                     </svg>
                     <!-- <svg width="32" height="38" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +235,7 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Страничка Вконтакте">
                 <svg width="24" height="14">
                   <use href="#logo-vk"></use>
                 </svg>
@@ -239,7 +246,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Страничка в телеграм">
                 <svg width="22" height="18">
                   <use href="#logo-telegram"></use>
                 </svg>
@@ -250,7 +257,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Канал на ютубе">
                 <svg width="20" height="14">
                   <use href="#logo-youtube"></use>
                 </svg>
