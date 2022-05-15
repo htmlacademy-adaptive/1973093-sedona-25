@@ -4,6 +4,9 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
+import htmlmin from 'gulp-html-minifier';
 
 // Styles
 
@@ -18,9 +21,17 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+// HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({collapseWhitespace: true }))
+  .pipe(gulp.dest('build'));
+}
+
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'source'
@@ -41,5 +52,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
