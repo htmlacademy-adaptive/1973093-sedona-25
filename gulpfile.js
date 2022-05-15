@@ -3,14 +3,15 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
-import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
+import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-html-minifier';
 import del from 'del';
+import autoprefixer from 'autoprefixer';
+import browser from 'browser-sync';
 
 // Styles
 
@@ -34,6 +35,16 @@ const html = () => {
   .pipe(htmlmin({collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'))
+}
+
+// Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
@@ -107,6 +118,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/app.js', gulp.series(scripts));
   // gulp.watch('source/*.html', gulp.series(html, reload))
   gulp.watch('source/*.html').on('change', browser.reload);
 }
@@ -120,6 +132,7 @@ export const build = gulp.series(
     html,
     svg,
     createWebp,
+    scripts,
   ),
 );
 
@@ -132,6 +145,7 @@ export default gulp.series(
     html,
     svg,
     createWebp,
+    scripts,
   ),
   gulp.series(
     server, watcher
