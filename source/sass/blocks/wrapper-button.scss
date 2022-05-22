@@ -34,6 +34,15 @@
     @media (min-width: $desktop-width) {
       width: 384px;
     }
+
+    &-text {
+      @media (min-width: $tablet-width) {
+        padding: 18px 60px 13px 49px;
+      }
+
+      @media (min-width: $desktop-width) {
+      }
+    }
   }
 
   &__legend {
@@ -45,7 +54,6 @@
     flex-grow: 1;
     justify-content: end;
     margin: 0;
-    margin-bottom: 24px;
     text-transform: uppercase;
     color: rgba(51, 51, 51, 0.6);
 

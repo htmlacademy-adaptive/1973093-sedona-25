@@ -22,11 +22,12 @@
     @media (min-width: $tablet-width) {
       width: 400px;
       margin-top: 283px;
-      padding: 50px 46px 49px;
+      padding: 47px 46px 49px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 244px;
+      padding: 45px 46px 49px;
     }
   }
 
@@ -39,11 +40,28 @@
   }
 
   &__slogan {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 25px;
+
     @media (min-width: $tablet-width) {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
       width: 250px;
       margin: 0 auto;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 700;
+      font-size: 30px;
       line-height: 40px;
-      padding-bottom: 22px;
+      width: 250px;
+      margin: 0 auto;
+      padding-bottom: 26px;
     }
   }
 

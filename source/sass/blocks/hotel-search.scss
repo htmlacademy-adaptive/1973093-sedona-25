@@ -5,15 +5,15 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  padding: 39px 0 32px;
+  padding-top: 39px;
 
   &__text-wrapper {
     @media (min-width: $tablet-width) {
-      padding: 61px 166px 41px;
+      padding: 20px 166px 12px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 60px 382px 46px;
+      padding: 20px 382px 8px;
     }
   }
 
@@ -21,12 +21,13 @@
     font-size: 21px;
     margin: 0;
     padding: 0;
-    padding-bottom: 35px;
+    padding-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       font-weight: 700;
       font-size: 30px;
       line-height: 26px;
+      padding-bottom: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -37,12 +38,23 @@
   }
 
   &__paragraph-data {
+    width: 261px;
     font-weight: 400;
-    margin: 0;
+    line-height: 21px;
+    margin: 0 auto;
     padding-bottom: 32px;
+    br {
+      display: none;
+    }
 
     @media (min-width: $tablet-width) {
-      line-height: 26px;
+      br {
+        display: block;
+      }
+      line-height: 21px;
+      width: 100%;
+      margin: 0;
+      text-align: center;
     }
 
     @media (min-width: $desktop-width) {
@@ -52,7 +64,6 @@
 
   &__map {
     display: block;
-    margin-bottom: 10px;
     // background-image: url("../../img/gallery/index/map-mobile.jpg");
     // background-repeat: no-repeat;
     // background-size: 100% auto;

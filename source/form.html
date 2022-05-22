@@ -67,12 +67,12 @@
           <source media="(min-width: 768px)" srcset="./img/gallery/form/welcome-img-form-tablet.jpg 1x,
           ./img/gallery/form/welcome-img-form-tablet@2x.jpg 2x">
           <img class="main-container__intro main-container__intro--form intro" src="./img/gallery/form/welcome-img-form.jpg"
-           srcset="./img/gallery/form/welcome-img-form@2x.jpg 2x" alt="Презентация.">
+          srcset="./img/gallery/form/welcome-img-form@2x.jpg 2x" alt="Презентация.">
         </picture>
         <div class="main-content">
           <header class="main-content__heading-block main-content__heading-block--form heading-block">
             <h2 class="visually-hidden">Презантация Седоны.</h2>
-            <p class="heading-block__slogan">Оставьте свой отзыв</p>
+            <p class="heading-block__slogan heading-block__slogan-form">Оставьте свой отзыв</p>
             <p class="heading-block__advantages heading-block__advantages--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
         </div>
@@ -80,7 +80,7 @@
           <form class="section-form__opinion" action="https://echo.htmlacademy.ru/" method="get" id="connection">
             <div class="section-form__controls controls">
               <h2 class="visually-hidden">Форма с данными.</h2>
-              <p class="controls__presentation">Представьтесь:</p>
+              <p class="controls__presentation controls__presentation-first">Представьтесь:</p>
               <ul class="controls__controls-list controls-list">
                 <li class="controls-list__item">
                   <label class="controls-list__text" for="name">Имя*:</label>
@@ -96,8 +96,8 @@
                 </li>
               </ul>
             </div>
-            <div class="section-form__controls controls">
-              <p class="controls__presentation">Контактная информация:</p>
+            <div class="section-form__controls section-form__controls-second controls">
+              <p class="controls__presentation controls__presentation-second">Контактная информация:</p>
               <ul class="controls__controls-list controls-list controls-list--secondary">
                 <li class="controls-list__item controls-list__item--info">
                   <label class="controls-list__text" for="phone">Контактный телефон*:</label>
@@ -152,7 +152,7 @@
               </ul>
             </fieldset>
             <fieldset class="section-form__checbox attractions">
-              <legend class="attractions__title">Посещенные достопримечательности</legend>
+              <legend class="attractions__title">Посещенные достопримечательности:</legend>
               <ul class="attractions__list">
                 <li class="attractions__item attractions__item--checked">
                   <label class="attractions__item-bridge">
@@ -178,7 +178,7 @@
                   <label class="attractions__item-rock">
                     <input class="visually-hidden attractions__item-input" type="checkbox" name="rock">
                     <span class="attractions__mark"></span>
-                    <span class="attractions__label">Красные скалы</span>
+                    <span class="attractions__label attractions__label-rock">Красные скалы</span>
                   </label>
                 </li>
               </ul>
@@ -187,7 +187,8 @@
               <p class="emotions__text">Опишите свои эмоции:</p>
               <textarea class="emotions__description-input" form="connection" placeholder="Опишите подробно все свои восторги "></textarea>
               <div class="section-form__wrapper-button wrapper-button">
-                <button class="wrapper-button__button button" type="submit">Отправить отзыв</button>
+                <button class="wrapper-button__button button" type="submit">
+                  <span class="wrapper-button__button-text">Отправить отзыв</span></button>
                 <small class="wrapper-button__legend wrapper-button__legend--bottom">
                   * — обязательные поля
                 </small>
@@ -197,7 +198,7 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__hashtag hashtag">
+        <div class="main-footer__hashtag main-footer__hashtag-form hashtag">
           <a class="hashtag__link" href="#">#visitsedona</a>
         </div>
         <div class="main-footer__social social">
@@ -273,4 +274,116 @@
     </div>
     <script src="js/app.js"></script>
   </body>
+  <!-- <div style="
+    position: absolute;
+    width: 768px;
+    height: 1937px;
+    margin: 0 auto;
+    background-image: url('img/pp/Tablet-form.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 1280px;
+    height: 1972px;
+    margin: 0 auto;
+    background-image: url('img/pp/Desktop-form.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 320px;
+    height: 1073px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-M1.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 320px;
+    height: 1073px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-M2.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 768px;
+    height: 972px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-T1.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 768px;
+    height: 972px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-T2.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 1280px;
+    height: 994px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-D1.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
+  <!-- <div style="
+    position: absolute;
+    width: 1280px;
+    height: 994px;
+    margin: 0 auto;
+    background-image: url('img/pp/Modal-D2.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
 </html>

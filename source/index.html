@@ -80,17 +80,17 @@
           <source type="image/webp" srcset="./img/gallery/index/intro-mobile.webp 1x,
            ./img/gallery/index/intro-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.png 1x,
-          ./img/gallery/index/intro-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.png 1x,
-          ./img/gallery/index/intro-tablet@2x.png 2x">
-          <img class="main-container__intro intro" src="./img/gallery/index/intro-mobile.png"
-           srcset="./img/gallery/index/intro-mobile@2x.png 2x" alt="Презентация.">
+          <source media="(min-width: 1200px)" srcset="./img/gallery/index/intro-desktop.jpg 1x,
+          ./img/gallery/index/intro-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/gallery/index/intro-tablet.jpg 1x,
+          ./img/gallery/index/intro-tablet@2x.jpg 2x">
+          <img class="main-container__intro intro" src="./img/gallery/index/intro-mobile.jpg"
+           srcset="./img/gallery/index/intro-mobile@2x.jpg 2x" alt="Презентация.">
         </picture>
         <section class="main-content">
           <header class="main-content__heading-block heading-block">
             <h2 class="visually-hidden">Презантация Седоны.</h2>
-            <p class="heading-block__slogan">Седона-небольшой городок в Аризоне заслуживающий большего!</p>
+            <p class="heading-block__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="heading-block__advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
           <ul class="main-content__list main-list">
@@ -105,6 +105,13 @@
                 </div>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/index/photo-1index-desktop.webp 1x,
+                ./img/gallery/index/photo-1index-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/index/photo-1index-tablet.webp 1x,
+                ./img/gallery/index/photo-1index-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/index/photo-1index.webp 1x,
+                 ./img/gallery/index/photo-1index@2x.webp 2x" alt="Фото улиц.">
+
                 <source media="(min-width: 1200px)" srcset="./img/gallery/index/photo-1index-desktop.jpg 1x,
                 ./img/gallery/index/photo-1index-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/gallery/index/photo-1index-tablet.jpg 1x,
@@ -114,7 +121,7 @@
               </picture>
               <ul class="main-list__list">
                 <li class="main-list__item">
-                  <span class="main-list__logo">
+                  <span class="main-list__logo main-list__logo--house">
                     <svg class="main-list__logo-house" width="39" height="37">
                       <use href="#logo-house"></use>
                     </svg>
@@ -138,7 +145,7 @@
                   </div>
                 </li>
                 <li class="main-list__item">
-                  <span class="main-list__logo">
+                  <span class="main-list__logo main-list__logo--food">
                     <svg class="main-list__logo-food" width="40" height="35">
                       <use href="#logo-food"></use>
                     </svg>
@@ -151,7 +158,7 @@
                       <path d="M24.1995 6.12866C24.7793 6.12866 25.2493 5.6751 25.2493 5.1156C25.2493 4.5561 24.7793 4.10254 24.1995 4.10254C23.6196 4.10254 23.1496 4.5561 23.1496 5.1156C23.1496 5.6751 23.6196 6.12866 24.1995 6.12866Z" fill="#81B3D2"/>
                     </svg> -->
                   </span>
-                  <div class="main-list__text">
+                  <div class="main-list__text main-list__text--food">
                     <h3 class="main-list__title main-list__title--food">Еда</h3>
                     <p class="main-list__pros main-list__pros--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </div>
@@ -165,27 +172,34 @@
                       <path d="M30.5778 11.2058H30.527H18.1841C25.0921 7.76156 25.6508 5.58358 25.3968 4.36796C24.8381 2.39259 22.5524 0.873068 20.419 1.68348C17.6254 2.74714 16.8635 6.9005 16.1016 9.88889C15.1365 6.84985 14.2222 3.0004 12.0381 1.02502C11.4286 0.467863 10.5143 -0.0892942 9.14286 0.0120071C7.11111 0.21461 4.21587 2.69649 5.43492 5.48228C6.55238 8.16676 10.2603 9.88888 12.7492 11.2565H1.42222C0.609524 11.2565 0 11.9149 0 12.6747V18.3475C0 19.158 0.660317 19.7658 1.42222 19.7658H1.5746V38H30.527V19.7658H30.5778C31.3905 19.7658 32 19.1073 32 18.3475V12.6747C32 11.8643 31.3397 11.2058 30.5778 11.2058ZM21.2317 2.94975C22.2984 2.79779 23.7206 3.6082 23.873 4.57057C24.0762 5.93813 22.1968 7.2044 21.3333 7.76156C20.0635 8.62262 18.8444 9.07847 17.6762 9.78758C18.0825 7.91351 18.946 3.25365 21.2317 2.94975ZM9.75238 7.91351C8.63492 7.15375 6.50159 5.68488 6.55238 4.01341C6.60317 2.18999 9.44762 0.721116 10.9714 2.08868C12.9016 3.76016 13.8159 7.66026 14.527 10.3954C12.9016 9.58498 11.3778 8.97717 9.75238 7.91351ZM12.7492 36.4805H3.04762V19.7658H12.7492V36.4805ZM12.7492 18.2462H1.52381V12.7253H12.7492V18.2462ZM17.8286 36.4805H14.2222V12.7253H17.8286V36.4805ZM29.0032 36.4805H19.3524V19.7658H29.054V36.4805H29.0032ZM30.4762 18.2462H19.3524V12.7253H30.4762V18.2462Z" fill="#81B3D2"/>
                     </svg> -->
                   </span>
-                  <div class="main-list__text">
+                  <div class="main-list__text main-list__text--surprise">
                     <h3 class="main-list__title main-list__title--surprise">Сувениры</h3>
-                    <p class="main-list__pros main-list__pros--surprise">Не только китайского, но и местного производства!</p>
-                    </div>
+                    <p class="main-list__pros main-list__pros--surprise">Не только китайского, но<br> и местного производства!</p>
+                  </div>
                 </li>
               </ul>
             </li>
             <li class="main-list__block main-list__block--primary-secondary">
               <div class="main-list__block-text">
-                <h3 class="main-list__presentation main-list__presentation--primary">Там есть мост дьявола</h3>
+                <h3 class="main-list__presentation main-list__presentation--primary-second">Там есть мост дьявола</h3>
                 <p class="main-list__number">— №2 —</p>
-                <p class="main-list__description main-list__description--primary">Да, по можно пройти! Если вы<br>
+                <p class="main-list__description main-list__description--primary-second">Да, по нему можно пройти! Если вы
                   осмелитесь, конечно</p>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/index/photo-2index-desktop.webp 1x,
+                ./img/gallery/index/photo-2index-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/index/photo-2index-tablet.webp 1x,
+                ./img/gallery/index/photo-2index-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/gallery/index/photo-2index.webp 1x,
+                 ./img/gallery/index/photo-2index@2x.webp 2x" alt="Фото улиц.">
+
                 <source media="(min-width: 1200px)" srcset="./img/gallery/index/photo-2index-desktop.jpg 1x,
                 ./img/gallery/index/photo-2index-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/gallery/index/photo-2index-tablet.jpg 1x,
                 ./img/gallery/index/photo-2index-tablet@2x.jpg 2x">
                 <img class="main-list__foto main-list__foto--secondary" src="./img/gallery/index/photo-2index.jpg"
-                 srcset="./img/gallery/index/photo-2index@2x.jpg 2x" alt="Фото улиц.">
+                srcset="./img/gallery/index/photo-2index@2x.jpg 2x" alt="Фото улиц.">
               </picture>
             </li>
             <li class="main-list__block main-list__secondary">
@@ -196,8 +210,8 @@
               </div>
             </li>
             <li class="main-list__block main-list__secondary">
-              <div class="main-list__secondary-text">
-                <h3 class="main-list__presentation">Красивая дорога</h3>
+              <div class="main-list__secondary-text main-list__secondary-text-fourth">
+                <h3 class="main-list__presentation main-list__presentation-fourth">Красивая дорога</h3>
                 <p class="main-list__number">— №4 —</p>
                 <p class="main-list__description">Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
                 </div>
@@ -214,11 +228,18 @@
         <section class="hotel-search">
           <div class="hotel-search__text-wrapper">
             <h2 class="hotel-search__interest">Заинтересовались?</h2>
-            <p class="hotel-search__paragraph-data">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            <p class="hotel-search__paragraph-data">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
           </div>
           <a class="wrapper-link wrapper-link--disabled" href="#">Найти гостиницу</a>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/index/map-desktop.webp 1x,
+            ./img/gallery/index/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/index/map-tablet.webp 1x,
+            ./img/gallery/index/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/gallery/index/map-mobile.webp 1x,
+             ./img/gallery/index/map-mobile@2x.webp 2x" alt="Фото улиц.">
+
             <source media="(min-width: 1200px)" srcset="./img/gallery/index/map-desktop.jpg 1x,
             ./img/gallery/index/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./img/gallery/index/map-tablet.jpg 1x,
@@ -282,4 +303,47 @@
     </div>
     <script src="js/app.js"></script>
   </body>
+  <!-- <div style="
+      position: absolute;
+      width: 320px;
+      height: 3387px;
+      margin: 0 auto;
+      background-image: url('img/pp/Mobile.jpg');
+      position: absolute;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+      pointer-events: none;">
+    </div> -->
+  <!-- <div style="
+      position: absolute;
+      width: 768px;
+      height: 2666px;
+      margin: 0 auto;
+      background-image: url('img/pp/Tablet.jpg');
+      position: absolute;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+      pointer-events: none;">
+    </div> -->
+    <!-- <div style="
+      position: absolute;
+      width: 1280px;
+      height: 2679px;
+      margin: 0 auto;
+      background-image: url('img/pp/Desktop.jpg');
+      position: absolute;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+      pointer-events: none;">
+    </div> -->
 </html>
+

@@ -1,4 +1,5 @@
 .controls {
+  position: relative;
   width: 284px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -23,9 +24,35 @@
 
   &__presentation {
     margin: 0;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 20px;
     word-break: break-all;
+
+    &-first {
+      @media (min-width: $desktop-width) {
+        margin-left: 13px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 28px;
+    }
+
+    &-second {
+      margin: 0;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      word-break: break-all;
+
+      @media (min-width: $tablet-width) {
+        padding-left: 6px;
+        padding-bottom: 28px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 7px;
+      }
+    }
   }
 
   &__controls-list {

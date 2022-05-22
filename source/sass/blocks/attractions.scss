@@ -1,4 +1,5 @@
 .attractions {
+  position: relative;
   border: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -6,16 +7,60 @@
   line-height: 26px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: '';
+      top: -15%;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: rgba(219, 219, 219, 1);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -15%;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: rgba(219, 219, 219, 1);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: '';
+      top: -50%;
+      left: 0;
+      width: 280px;
+      height: 1px;
+      background-color: rgba(219, 219, 219, 1);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -50%;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: rgba(219, 219, 219, 1);
+    }
+  }
+
   &__title {
+    position: relative;
     margin: 0;
-    padding: 24px 23px 20px;
+    padding: 24px 23px 20px 17px;
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
       font-size: 21px;
       width: 308px;
       padding: 0;
-      padding-bottom: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -53,6 +98,7 @@
   &__item {
     padding: 10px 0 10px;
     display: flex;
+    margin-left: 2px;
   }
 
   &__item:not(:last-child) {
@@ -106,6 +152,12 @@
 
   &__label {
     padding-left: 62px;
+
+    &-rock {
+      @media (min-width: $desktop-width) {
+        padding-left: 60px;
+      }
+    }
   }
 
   &__item-mountain {

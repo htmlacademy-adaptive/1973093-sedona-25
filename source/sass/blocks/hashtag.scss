@@ -5,7 +5,17 @@
   word-break: break-all;
 
   &__link {
+    font-weight: 700;
     text-decoration: none;
     width: 166px;
+    color: rgba(0, 0, 0, 1);
+
+    @media (min-width: $tablet-width) {
+      margin: 50px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 50px auto;
+    }
   }
 }

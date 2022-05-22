@@ -12,9 +12,20 @@
   }
 
   &__text {
-    width: 121px;
-    margin: 7px 0 29px auto;
+    width: 115px;
+    margin: 7px 0 29px 82px;
     word-break: break-all;
+
+    @media (min-width: $tablet-width) {
+      margin: 50px auto;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 50px auto;
+      margin-left: 256px;
+      padding: 0;
+    }
   }
 
   &__link {
@@ -22,5 +33,15 @@
     height: 35px;
     margin: 0 auto 23px 0;
     color: rgba(0, 0, 0, 1);
+
+    @media (min-width: $tablet-width) {
+      margin: 43px auto;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 43px auto;
+      padding: 0;
+    }
   }
 }

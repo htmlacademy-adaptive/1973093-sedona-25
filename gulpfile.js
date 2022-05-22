@@ -8,7 +8,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-html-minifier';
+import htmlmin from 'gulp-htmlmin';
 import del from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -32,7 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
 
@@ -119,8 +119,8 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/app.js', gulp.series(scripts));
-  // gulp.watch('source/*.html', gulp.series(html, reload))
-  gulp.watch('source/*.html').on('change', browser.reload);
+  // gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/*.html').on('change', gulp.series(html, browser.reload));
 }
 
 export const build = gulp.series(
@@ -151,3 +151,7 @@ export default gulp.series(
     server, watcher
   )
 );
+
+// export default gulp.series(
+//   html, styles, server, watcher
+// );

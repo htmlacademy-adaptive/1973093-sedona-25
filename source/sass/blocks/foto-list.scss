@@ -8,7 +8,7 @@
 
   &__item {
     margin: 0 auto;
-    padding: 24px 0;
+    padding: 45px 0 5px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -187,7 +187,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: 1100px;
-      margin: 22px 0 15px 20px;
+      margin: 20px 0 15px 20px;
     }
   }
 
@@ -200,6 +200,16 @@
     @media (min-width: $desktop-width) {
       max-width: 300px;
       margin: 22px 0 15px 20px;
+    }
+
+    &-second {
+      @media (min-width: $tablet-width) {
+        margin-top: 21px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 17px;
+      }
     }
   }
 
@@ -219,18 +229,38 @@
   }
 
   &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
     display: flex;
     text-align: left;
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 15px 0 2px 2px;
     word-break: break-all;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 
   &__autor {
     display: flex;
     justify-content: start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
     margin: 0;
     margin-bottom: 11px;
     text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 2px;
+    }
   }
 }

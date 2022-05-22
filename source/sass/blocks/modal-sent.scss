@@ -20,7 +20,7 @@
 
     @media (min-width: $tablet-width) {
       width: 640px;
-      margin-top: 283px;
+      margin-top: 166px;
     }
 
     @media (min-width: $desktop-width) {
@@ -29,18 +29,37 @@
   }
 
   &__heading-block {
-    margin: 39px 48px 30px;
+    margin: 39px 48px 51px;
 
     @media (min-width: $tablet-width) {
-      margin: 53px auto 30px;
+      margin: 41px auto 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 41px auto 39px;
     }
   }
 
   &__slogan {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 25px;
+
     @media (min-width: $tablet-width) {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
       margin: 0 auto;
-      line-height: 26px;
-      padding-bottom: 14px;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      padding-bottom: 26px;
     }
   }
 
@@ -70,6 +89,12 @@
 
     @media (min-width: $tablet-width) {
       width: 458px;
+      font-weight: 700;
+      font-size: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
     }
   }
 
