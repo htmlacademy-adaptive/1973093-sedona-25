@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: -15%;
       left: 0;
       width: 123px;
@@ -20,7 +20,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: -15%;
       right: 0;
       width: 123px;
@@ -32,7 +32,7 @@
   @media (min-width: $desktop-width) {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: -50%;
       left: 0;
       width: 280px;
@@ -42,7 +42,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: -50%;
       right: 0;
       width: 280px;

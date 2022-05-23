@@ -33,15 +33,14 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     word-break: break-all;
 
-    &:hover &-link {
-      color: rgba(129, 179, 210, 1);
+    &:hover {
+      background-color: rgba(102, 158, 192, 1);
     }
 
-    &:focus &-link {
-      color: rgba(0, 0, 0, 0.3);
+    &:active {
+      background-color: rgba(84, 150, 189, 1);
     }
 
-    &:active,
     &:active .list__item-link {
       color: rgba(0, 0, 0, 0.3);
     }
@@ -53,6 +52,23 @@
       padding-top: 18px;
       padding-bottom: 18px;
       word-break: break-all;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      &:hover &-link {
+        color: rgba(129, 179, 210, 1);
+      }
+
+      &:focus &-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &:active,
+      &:active .list__item-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -61,6 +77,19 @@
       padding-top: 18px;
       padding-bottom: 18px;
       word-break: break-all;
+
+      &:hover &-link {
+        color: rgba(129, 179, 210, 1);
+      }
+
+      &:focus &-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &:active,
+      &:active .list__item-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 

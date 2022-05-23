@@ -27,7 +27,7 @@
       @media (min-width: $tablet-width) {
         &::before {
           position: absolute;
-          content: '';
+          content: "";
           top: 48%;
           left: -52%;
           width: 338px;
@@ -40,7 +40,7 @@
       @media (min-width: $desktop-width) {
         &::before {
           position: absolute;
-          content: '';
+          content: "";
           top: 48%;
           left: -32%;
           width: 338px;
