@@ -178,20 +178,11 @@
     @media (min-width: $tablet-width) {
       padding-left: 62px;
     }
-
-    @media (min-width: $desktop-width) {
-    }
   }
-  // &__item--checked {
-  // }
 
   &__item-positively {
     position: relative;
   }
-
-  // &__item-input {
-  //   position: relative;
-  // }
 
   &__item-negative {
     position: relative;

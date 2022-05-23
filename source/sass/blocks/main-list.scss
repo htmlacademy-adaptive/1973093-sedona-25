@@ -278,9 +278,6 @@
   }
 
   &__foto--first {
-    // background-image: url("../../img/gallery/index/photo-1index.jpg");
-    // background-repeat: no-repeat;
-    // background-size: 100% auto;
     display: block;
     height: 100%;
     margin: 0;
@@ -289,9 +286,6 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      // background-image: url("../../img/gallery/index/photo-1index-tablet.jpg");
-      // background-repeat: no-repeat;
-      // background-size: 100% auto;
       margin: 0;
       background-color: rgba(255, 255, 255, 1);
       padding: 0;
@@ -300,9 +294,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      // background-image: url("../../img/gallery/index/photo-1index-desktop.jpg");
-      // background-repeat: no-repeat;
-      // background-size: 100% auto;
       margin: 0;
       background-color: rgba(255, 255, 255, 1);
       padding: 0;
@@ -312,9 +303,6 @@
   }
 
   &__foto--secondary {
-    // background-image: url("../../img/gallery/index/photo-2index.jpg");
-    // background-repeat: no-repeat;
-    // background-size: 100% auto;
     display: block;
     margin: 0;
     width: 320px;
@@ -323,9 +311,6 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      // background-image: url("../../img/gallery/index/photo-2index-tablet.jpg");
-      // background-repeat: no-repeat;
-      // background-size: 100% auto;
       display: block;
       margin: 0;
       background-color: rgba(255, 255, 255, 1);
@@ -334,9 +319,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      // background-image: url("../../img/gallery/index/photo-2index-desktop.jpg");
-      // background-repeat: no-repeat;
-      // background-size: 100% auto;
       display: block;
       margin: 0;
       background-color: rgba(255, 255, 255, 1);
@@ -630,8 +612,6 @@
     }
   }
 
-
-
   &__description--primary-second br {
     display: none;
 
@@ -640,11 +620,3 @@
     }
   }
 }
-
-// .main-list__pros {
-//   @media (min-width: $tablet-width) {
-//     br:nth-child(2) {
-//       display: none;
-//     }
-//   }
-// }
