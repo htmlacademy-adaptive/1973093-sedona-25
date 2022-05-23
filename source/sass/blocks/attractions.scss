@@ -141,6 +141,13 @@
       background-color: rgba(229, 229, 229, 1);
     }
 
+    .attractions__item-bridge:focus-within &,
+    .attractions__item-mountain:focus-within &,
+    .attractions__item-park:focus-within &,
+    .attractions__item-rock:focus-within & {
+      outline: 3px solid rgba(102, 158, 192, 1);
+    }
+
     .attractions__item-bridge:active &,
     .attractions__item-mountain:active &,
     .attractions__item-park:active &,

@@ -33,19 +33,17 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     word-break: break-all;
 
-    &:hover {
-      background-color: rgba(102, 158, 192, 1);
+    &:hover &-link {
+      color: rgba(129, 179, 210, 1);
     }
 
-    &:focus {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(84, 150, 189, 1);
+    &:focus &-link {
+      color: rgba(0, 0, 0, 0.3);
     }
 
     &:active,
     &:active .list__item-link {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(84, 150, 189, 1);
+      color: rgba(0, 0, 0, 0.3);
     }
 
     @media (min-width: $tablet-width) {
@@ -98,6 +96,11 @@
     line-height: 21px;
     text-align: center;
     text-decoration: none;
+    width: 320px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
 

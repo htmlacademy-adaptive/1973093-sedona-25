@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <svg style="display: none">
@@ -28,10 +30,10 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list list">
             <li class="list__item list__item--first hidden">
-              <a class="list__item-link list__item-link--current">Главная</a>
+              <a class="list__item-link" href="index.html">Главная</a>
             </li>
             <li class="list__item hidden">
-              <a class="list__item-link" href="index.html">Фото и видео</a>
+              <a class="list__item-link list__item-link--current" href="index.html">Фото и видео</a>
             </li>
             <li class="list__item list__item--hidden"></li>
             <li class="list__item hidden">
@@ -41,7 +43,7 @@
               <a class="list__item-link" href="#">html academy</a>
             </li>
           </ul>
-          <a class="main-nav__logo logo-link" href="#">
+          <a class="main-nav__logo logo-link" href="index.html">
             <img class="logo-link__image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
           </a>
           <button class="main-nav__toggle" type="button">

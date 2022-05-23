@@ -128,6 +128,20 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .list__item {
+  display: block;
+}
+
+.main-nav--nojs .list__item--first .list__item-link {
+  padding-right: 21px;
+  padding-left: 21px;
+  text-align: left;
+}
+
 // .hidden {
 //   display: none;
 // }

@@ -111,6 +111,10 @@
       text-align: left;
       font-size: 18px;
     }
+
+    &:focus {
+      border-color: rgba(102, 158, 192, 1);
+    }
   }
 
   &__item:not(:last-child) {
@@ -152,6 +156,12 @@
     .impressions__item-negative:hover &,
     .impressions__item-neutral:hover & {
       background-color: rgba(229, 229, 229, 1);
+    }
+
+    .impressions__item-positively:focus-within &,
+    .impressions__item-negative:focus-within &,
+    .impressions__item-neutral:focus-within & {
+      outline: 3px solid rgba(102, 158, 192, 1);
     }
 
     .impressions__item-positively:active &,

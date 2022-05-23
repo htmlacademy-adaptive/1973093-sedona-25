@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <svg style="display: none">
@@ -31,20 +33,20 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list list">
             <li class="list__item list__item--first hidden">
-              <a class="list__item-link list__item-link--current" href="index.html">Главная</a>
+              <a class="list__item-link" href="index.html">Главная</a>
             </li>
             <li class="list__item hidden">
               <a class="list__item-link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="list__item list__item--hidden"></li>
             <li class="list__item hidden">
-              <a class="list__item-link">Форма отзыва</a>
+              <a class="list__item-link list__item-link--current">Форма отзыва</a>
             </li>
             <li class="list__item hidden">
               <a class="list__item-link" href="#">html academy</a>
             </li>
           </ul>
-          <a class="main-nav__logo logo-link" href="#">
+          <a class="main-nav__logo logo-link" href="index.html">
             <img class="logo-link__image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
           </a>
           <button class="main-nav__toggle" type="button">
@@ -166,6 +168,7 @@
                     <input class="visually-hidden attractions__item-input" type="checkbox" name="mountain" checked>
                     <span class="attractions__mark"></span>
                     <span class="attractions__label">Гора-Колокол</span>
+                  </label>
                 </li>
                 <li class="attractions__item attractions__item--checked">
                   <label class="attractions__item-park">
@@ -274,6 +277,20 @@
     </div>
     <script src="js/app.js"></script>
   </body>
+  <!-- <div style="
+    position: absolute;
+    width: 320px;
+    height: 2304px;
+    margin: 0 auto;
+    background-image: url('img/pp/Mobile-form.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: invert(1);
+    pointer-events: none;">
+  </div> -->
   <!-- <div style="
     position: absolute;
     width: 768px;

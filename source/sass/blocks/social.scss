@@ -3,7 +3,9 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 0;
+    flex-wrap: wrap;
+    width: 162px;
+    margin: 0 auto;
     padding: 0;
 
     @media (min-width: $tablet-width) {
@@ -21,6 +23,7 @@
     position: relative;
     width: 48px;
     height: 48px;
+    margin: 0;
     background-color: rgba(129, 179, 210, 1);
 
     &:hover {
@@ -36,7 +39,7 @@
     }
   }
 
-  &__item:not(:last-child) {
+  &__item:not(:nth-child(3n)) {
     margin-right: 6px;
   }
 
