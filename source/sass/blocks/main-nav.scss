@@ -133,16 +133,42 @@
 }
 
 .main-nav--nojs .main-nav__list {
+  display: block;
   position: static;
   min-height: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav--nojs .list__item {
+  height: 56px;
   background-color: rgba(129, 179, 210, 1);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 .main-nav--nojs .list__item--first .list__item-link {
   text-align: center;
+}
+
+.main-nav--nojs {
+  height: auto;
 }
 
 

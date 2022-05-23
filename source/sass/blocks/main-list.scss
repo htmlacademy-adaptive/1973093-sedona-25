@@ -536,32 +536,6 @@
 
     &--surprise {
       padding: 0 0 16px 44px;
-
-      br {
-        display: none;
-      }
-
-      @media (min-width: $tablet-width) {
-        br {
-          &:nth-child(2) {
-            display: block;
-          }
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        line-height: 23px;
-
-        br {
-          &:nth-child(1) {
-            display: block;
-          }
-
-          &:nth-child(2) {
-            display: none;
-          }
-        }
-      }
     }
 
     @media (min-width: $tablet-width) {

@@ -1,0 +1,21 @@
+.pros-breaker {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 23px;
+
+    &:nth-child(1) {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
