@@ -37,15 +37,12 @@
       background-color: rgba(102, 158, 192, 1);
     }
 
-    &:focus {
-      color: rgba(255, 255, 255, 0.3);
+    &:active {
       background-color: rgba(84, 150, 189, 1);
     }
 
-    &:active,
     &:active .list__item-link {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(84, 150, 189, 1);
+      color: rgba(0, 0, 0, 0.3);
     }
 
     @media (min-width: $tablet-width) {
@@ -55,6 +52,23 @@
       padding-top: 18px;
       padding-bottom: 18px;
       word-break: break-all;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      &:hover &-link {
+        color: rgba(129, 179, 210, 1);
+      }
+
+      &:focus &-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &:active,
+      &:active .list__item-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -63,6 +77,19 @@
       padding-top: 18px;
       padding-bottom: 18px;
       word-break: break-all;
+
+      &:hover &-link {
+        color: rgba(129, 179, 210, 1);
+      }
+
+      &:focus &-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &:active,
+      &:active .list__item-link {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 
@@ -98,6 +125,11 @@
     line-height: 21px;
     text-align: center;
     text-decoration: none;
+    width: 320px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
 
@@ -128,35 +160,4 @@
       }
     }
   }
-
-  // &__logo-link {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 67px;
-
-  //   @media (min-width: $tablet-width) {
-  //     position: absolute;
-  //     top: 0;
-  //     left: 291px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     position: absolute;
-  //     top: 0;
-  //     left: 507px;
-  //   }
-  // }
-
-  // &__logo-image {
-  // }
-
-  // &__item--current {
-  //   font-family: "PT Sans", sans-serif;
-  //   font-weight: 700;
-  //   font-size: 14px;
-  //   line-height: 21px;
-  //   text-align: center;
-  //   text-decoration: none;
-  //   color: rgba(118, 99, 87, 1);
-  // }
 }

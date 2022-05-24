@@ -14,52 +14,86 @@
     display: flex;
   }
 
+  &-catalog {
+    position: relative;
+    margin-top: -57px;
+  }
+
   &__hashtag {
     margin: 0 auto;
-    padding-top: 28px;
-    padding-bottom: 33px;
+    padding-top: 42px;
+    padding-bottom: 36px;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      margin: 45px auto 71px;
+      margin: 0 46px 0 45px;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      margin: 45px auto 71px;
+      margin: 0 254px 0 104px;
       padding: 0;
+    }
+
+    &-catalog {
+      padding-top: 31px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 0 46px 0 45px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 254px 0 104px;
+      padding: 0;
+    }
+
+    &-form {
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 36px;
+
+      @media (min-width: $tablet-width) {
+        margin: 0 46px 0 45px;
+        padding: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 0 254px 0 104px;
+        padding: 0;
+      }
     }
   }
 
   &__social {
-    margin: 0 auto 40px;
+    margin: 0 auto 34px;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      margin: 36px auto;
+      margin: 0 auto;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
-      margin: 36px auto;
+      margin: 0 auto 0 -3px;
       padding: 0;
     }
   }
 
   &__copyright {
     margin: 0 auto;
+    margin-right: 14px;
 
     @media (min-width: $tablet-width) {
       display: flex;
-      margin: 36px auto 43px;
+      margin: 0 auto;
+      margin-right: 60px;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      margin: 36px auto 43px;
+      margin: 0 auto;
+      margin-right: 120px;
       padding: 0;
     }
   }

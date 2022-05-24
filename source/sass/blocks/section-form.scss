@@ -20,12 +20,40 @@
   }
 
   &__controls {
+    position: relative;
     margin: 0 auto;
+
+    &-second {
+      @media (min-width: $tablet-width) {
+        &::before {
+          position: absolute;
+          content: "";
+          top: 48%;
+          left: -52%;
+          width: 338px;
+          height: 1px;
+          background-color: rgba(219, 219, 219, 1);
+          transform: rotate(90deg);
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        &::before {
+          position: absolute;
+          content: "";
+          top: 48%;
+          left: -32%;
+          width: 338px;
+          height: 1px;
+          background-color: rgba(219, 219, 219, 1);
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
 
   &__radio {
     margin: 0;
-    margin-bottom: 48px;
     padding: 0;
 
     @media (min-width: $tablet-width) {
@@ -43,7 +71,6 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
-      margin-bottom: 48px;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,11 +82,11 @@
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      margin: 0 auto 64px;
+      margin: 0 auto 5px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 64px;
+      margin: 0 auto 5px;
     }
   }
 

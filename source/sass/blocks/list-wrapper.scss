@@ -12,12 +12,15 @@
     @media (min-width: $tablet-width) {
       margin-right: 9px;
     }
-
-    @media (min-width: $desktop-width) {
-    }
   }
 
   &__liked {
     display: flex;
+    padding-left: 2px;
+    padding-top: 4px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 3px;
+    }
   }
 }
