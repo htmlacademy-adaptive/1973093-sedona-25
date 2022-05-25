@@ -1,5 +1,4 @@
 .section-form {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -28,12 +27,11 @@
         &::before {
           position: absolute;
           content: "";
-          top: 48%;
-          left: -52%;
-          width: 338px;
-          height: 1px;
+          top: 6%;
+          left: -1px;
+          width: 1px;
+          height: 82%;
           background-color: rgba(219, 219, 219, 1);
-          transform: rotate(90deg);
         }
       }
 
@@ -41,12 +39,11 @@
         &::before {
           position: absolute;
           content: "";
-          top: 48%;
-          left: -32%;
-          width: 338px;
-          height: 1px;
+          top: 7%;
+          left: 13px;
+          width: 1px;
+          height: 80%;
           background-color: rgba(219, 219, 219, 1);
-          transform: rotate(90deg);
         }
       }
     }
@@ -58,10 +55,11 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 42px;
+      width: 100%;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 56px;
+      margin-bottom: 57px;
     }
   }
 
@@ -75,6 +73,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 56px;
+      width: 100%;
     }
   }
 

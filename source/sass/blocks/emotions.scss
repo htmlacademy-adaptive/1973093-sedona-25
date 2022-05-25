@@ -1,6 +1,5 @@
 .emotions {
   position: relative;
-  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: column;
 
@@ -70,7 +69,7 @@
   }
 
   &__description-input {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     align-items: center;
     width: 279px;
     height: 150px;
