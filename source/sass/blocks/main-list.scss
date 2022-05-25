@@ -152,7 +152,7 @@
       margin: 0;
 
       @media (min-width: $tablet-width) {
-        width: 150px;
+        width: 100%;
         font-size: 21px;
         line-height: 26px;
         margin: 0 auto;
@@ -161,7 +161,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        width: 150px;
+        width: 100%;
         font-size: 21px;
         line-height: 26px;
         margin: 0 auto;
@@ -531,7 +531,7 @@
     }
 
     &--food {
-      padding: 0 0 16px 52px;
+      padding: 0 0 16px 51px;
     }
 
     &--surprise {

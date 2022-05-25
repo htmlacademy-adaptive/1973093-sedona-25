@@ -86,6 +86,10 @@
       color: rgba(0, 0, 0, 0.3);
     }
 
+    &:-moz-placeholder {
+      opacity: 1;
+    }
+
     @media (min-width: $tablet-width) {
       width: 648px;
       height: 160px;
