@@ -28,11 +28,6 @@
     background-color: rgba(84, 150, 189, 1);
   }
 
-  &-disabled:disabled {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(229, 229, 229, 1);
-  }
-
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto 58px;
@@ -41,5 +36,10 @@
   @media (min-width: $desktop-width) {
     width: 458px;
     margin: 0 auto 66px;
+  }
+
+  &--disabled {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(229, 229, 229, 1);
   }
 }
